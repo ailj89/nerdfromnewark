@@ -1,8 +1,10 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
+  <AboutMe />
 </template>
+
+<script setup lang="ts">
+import AboutMe from '../components/AboutMe.vue'
+</script>
 
 <style>
 @media (min-width: 1024px) {

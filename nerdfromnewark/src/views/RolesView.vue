@@ -1,31 +1,15 @@
 <template>
-    <div class="about">
-        <h1>This is my career page</h1>
+    <div>
+        <h1>Interested in the roles I've had throughout my career? This is the page for you!</h1>
 
-      <div class="careers">
-        <div class="career">
-            <v-card text="..."></v-card>
-
-            <v-list lines="one">
-                <v-list-item
-                    v-for="n in 3"
-                    :key="n"
-                    :title="'Item ' + n"
-                    subtitle="Lorem ipsum dolor sit amet consectetur adipisicing elit"
-                ></v-list-item>
-            </v-list>
-        </div>
-      </div>
+        <roles-list />
     </div>
 </template>
-  
-  <style>
-  @media (min-width: 1024px) {
-    .about {
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-    }
-  }
-  </style>
-  
+
+<script lang="ts" setup>
+  import RolesList from "../components/MyRoles/RolesList.vue";
+</script>
+
+
+<style>
+</style>

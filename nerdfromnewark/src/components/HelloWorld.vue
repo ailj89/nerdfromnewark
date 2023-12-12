@@ -1,42 +1,29 @@
 <template>
-  <div class="greetings">
-    <h1 class="green">{{ msg }}</h1>
-    <h3>
-      Find out more
-      <a href="/about" target="_self">About Me</a> and my
-      <a href="/career" target="_self">Career</a>.
-    </h3>
+  <div class="mx-auto" max-width="400">
+
+    <v-card
+      max-width="200"
+      height="200"
+      image="https://cdn.vuetifyjs.com/images/cards/docks.jpg"
+      title="Career"
+      theme="dark"
+    ></v-card>
+
+    <v-card
+      max-width="200"
+      height="200"
+      image="https://cdn.vuetifyjs.com/images/cards/docks.jpg"
+      title="Hobbies"
+      theme="dark"
+    ></v-card>
   </div>
 </template>
 
 <script setup lang="ts">
-defineProps<{
-  msg: string
-}>()
+
 </script>
 
 
 <style scoped>
-h1 {
-  font-weight: 500;
-  font-size: 2.6rem;
-  position: relative;
-  top: -10px;
-}
 
-h3 {
-  font-size: 1.2rem;
-}
-
-.greetings h1,
-.greetings h3 {
-  text-align: center;
-}
-
-@media (min-width: 1024px) {
-  .greetings h1,
-  .greetings h3 {
-    text-align: left;
-  }
-}
 </style>
