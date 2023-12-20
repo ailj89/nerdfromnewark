@@ -23,80 +23,81 @@
 
     interface Role {
         company: string,
+        img?: string,
+        location?: string
         duties: string[],
         date: string,
         title: string,
+        type?: string,
     }
 
     const roles: Role[] = [
         {
             title: 'Senior Front-End Developer',
             company: 'gen.video',
+            location: 'Remote',
             date: 'Oct 2018 - Oct 2023',
             duties: [
                 'Develop Influencer Marketing and Retail Analytic tools used by F500 companies.', 
                 'Work with Back-End Developers to plan/suggest API changes and debug.',
                 'Assist in migrating the application from AngularJS to Vue.',
                 'Participate in daily stand-up to discuss tasks and goals for the day.'
+            ],
+            type: 'Contract to Hire'
+        },
+        {
+            title: 'Front-End Developer',
+            company: 'Robert Half International',
+            location: 'Hybrid',
+            date: 'May 2018 - July 2018',
+            duties: [
+                'Senior Consultant within the Salaried Professional Services division for Web Development.',
+                'Leveraged Pluralsight React training to redevelop portfolio.'
             ]
         },
-    ]
-
-        // {
-        // title: 'Front-End Developer'
-        // company: 'Robert Half International'
-        // date: May 2018 - July 2018
-        // Senior Consultant within the Salaried Professional Services
-        // division for Web Development
-        // Leveraged Pluralsight React training to redevelop
-        // portfolio.
-
-        // },
-        // {
-        // title: 'Front-End Developer'
-        // company: 'Inc Design'
-        // date: Mar 2018 - Apr 2018
-        // Updated W.R. Berkley Annual Report site, highlighting yearly
-        // revenue via jQuery.
-        // Enhance user experience by incorporating animations,
-        // carousel, and charts.
-        // Worked directly with the designer to ensure pixel perfect
-        // representation and responsive design.
-
-        // },
-        // {
-        // title: 'Front-End Developer'
-        // company: 'AllianceBernstein'
-        // date: Sept 2016 - Jan 2018
-        // Developed and maintained various AB portal sites via Methode.
-        // Worked with QA team to debug and test prior to publishing to
-        // production.
-        // Support existing sites via requests from internal clients.
-        // Collaborated on the creation of the company’s pattern
-        // library.
-
-        // },
-        // {
-        // title: 'Front-End Developer'
-        // company: 'Alchemy50'
-        // date: Sept 2016 - Jan 2018
-        // Developed and maintained various AB portal sites via
-        // Methode.
-        // Worked with QA team to debug and test prior to publishing
-        // to production.
-        // Support existing sites via requests from internal clients.
-        // Collaborated on the creation of the company’s pattern
-        // library.
-
-        // },
-        // {
-        //     title: 'Front-End Developer'
-        //     company: 'Mammoth Advertising'
-        //     date: Jan 2016 - Mar 2016
-        //     Developed sites for motion pictures My Big Fat Greek
-        //     Wedding 2 and Miracles from Heaven.
-        //     Built an e-card generator for Miracles from Heaven.
-        // },
+        {
+            title: 'Front-End Developer',
+            company: 'Inc Design',
+            location: 'Hybrid',
+            date: 'Mar 2018 - Apr 2018',
+            duties: [
+                'Updated W.R. Berkley Annual Report site, highlighting yearly revenue via jQuery.',
+                'Enhance user experience by incorporating animations, carousel, and charts.',
+                'Worked directly with the designer to ensure pixel perfect representation and responsive design.'
+            ]
+        },
+        {
+            title: 'Front-End Developer',
+            company: 'AllianceBernstein',
+            date: 'Sept 2016 - Jan 2018',
+            duties: [
+                'Developed and maintained various AB portal sites via Methode.',
+                'Worked with QA team to debug and test prior to publishing to production.',
+                'Support existing sites via requests from internal clients.',
+                'Collaborated on the creation of the company\’s pattern library.'
+            ]
+        },
+        {
+            title: 'Front-End Developer',
+            company: 'Alchemy50',
+            date: 'Sept 2016 - Jan 2018',
+            duties: [
+                'Developed a Financial Portfolio dashboard to help users manage stocks, get up-to-date ticker information.',
+                'Created protyotype in jQuery which was migrated to AngularJS',
+                'Used jQuery UI to include features such as arranging panels. highlight articles, note taking, and send e-mails.'
+            ]
+        },
+        {
+            title: 'Front-End Developer',
+            company: 'Mammoth Advertising',
+            location: 'On Site',
+            date: 'Jan 2016 - Mar 2016',
+            duties: [
+                'Developed sites for motion pictures My Big Fat Greek Wedding 2 and Miracles from Heaven.',
+                'Built an e-card generator for Miracles from Heaven.',
+                'Utilized Tumblr as a CMS'
+            ]
+        },
         // {
         // title: 'Front-End Developer'
         // company: 'Pink Stone Capital Incubator'
@@ -169,5 +170,5 @@
         // date: Dec 2008 - May 2009
         // QA and bug fixes for bentley.edu sites.
         // }
-    
+    ]
 </script>
