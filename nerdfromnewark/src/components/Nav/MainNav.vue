@@ -1,15 +1,15 @@
 <template>
     <header>
         <div>
-            <router-link :to="{name: 'Home'}"> 
-                <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
+            <router-link :to="{name: 'Home'}" class="d-inline-block mx-2"> 
+                <img alt="Nerd From Newark" class="logo" src="@/assets/nfn.png" width="125" height="125" />
             </router-link>
             
-            <h1>{{ title  }}</h1>
+            <h1 class="d-inline-block mx-2">{{ title  }}</h1>
 
-            <nav>
+            <nav class="d-inline-block mx-2">
                 <ul>
-                    <li v-for="item in navItems" :key="item.name">
+                    <li class="d-inline-block mx-2" v-for="item in navItems" :key="item.name">
                         <router-link :to="item.url">{{ item.name }}</router-link>
                     </li>
                 </ul>

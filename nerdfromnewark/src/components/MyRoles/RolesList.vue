@@ -74,13 +74,13 @@
                 'Developed and maintained various AB portal sites via Methode.',
                 'Worked with QA team to debug and test prior to publishing to production.',
                 'Support existing sites via requests from internal clients.',
-                'Collaborated on the creation of the company\’s pattern library.'
+                'Collaborated on the creation of the company\'s pattern library.'
             ]
         },
         {
             title: 'Front-End Developer',
             company: 'Alchemy50',
-            date: 'Sept 2016 - Jan 2018',
+            date: 'Mar 2016 - May 2016',
             duties: [
                 'Developed a Financial Portfolio dashboard to help users manage stocks, get up-to-date ticker information.',
                 'Created protyotype in jQuery which was migrated to AngularJS',
