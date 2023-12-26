@@ -19,6 +19,8 @@
       startups. During that time, I also have 2 years experience of teaching and assisting in
       Front-End Development courses.
 
+      <h3 class="my-4">Skills I've learned over the years include:</h3>
+
       <v-list-item
         v-for="skill in skills"
         :key="skill.name"
@@ -30,18 +32,12 @@
 </template>
 
 <script lang="ts" setup>
-import { onMounted, computed } from 'vue'
+import { onMounted } from 'vue'
 import { useSkillsStore } from '@/stores/skills'
 
 const skillsStore = useSkillsStore()
 
-// const skills = computed(() => {
-//   return skillsStore.FETCH_SKILLS
-// })
-
-const skills = skillsStore.FETCH_SKILLS()
-
-console.log(skills)
+const skills = skillsStore.skills
 
 onMounted(skillsStore.FETCH_SKILLS)
 </script>
