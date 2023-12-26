@@ -1,13 +1,24 @@
-import { render, screen} from '@testing-library/vue';
+import { render, screen } from '@testing-library/vue'
+import { createTestingPinia } from '@pinia/testing'
+import { useRolesStore } from '@/stores/roles'
+import RolesList from '@/components/MyRoles/RolesList.vue'
 
-import RolesList from '@/components/MyRoles/RoleList.vue';
+describe('RolesList', () => {
+  const renderRolesList = () => {
+    const pinia = createTestingPinia()
+    const rolesStore = useRolesStore()
 
-describe('RoleList', () => {
-    const renderRolesList = () => {
-        render(RolesList)
-    }
-})
+    render(RolesList, {
+      global: {
+        plugins: [pinia]
+      }
+    })
 
-it('fetches the role list', () => {
-    expect
+    return { rolesStore }
+  }
+
+  it('should fetch a list of roles', () => {
+    const { rolesStore } = renderRolesList()
+    expect(rolesStore.FETCH_ROLES).toHaveBeenCalled()
+  })
 })
