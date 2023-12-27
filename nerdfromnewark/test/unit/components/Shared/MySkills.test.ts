@@ -1,9 +1,11 @@
 import type { Mock } from 'vitest'
 import { render, screen } from '@testing-library/vue'
+import { createPinia, setActivePinia } from 'pinia'
 import { createTestingPinia } from '@pinia/testing'
 import axios from 'axios'
 import { useSkillsStore } from '@/stores/skills'
 import MySkills from '@/components/Shared/MySkills.vue'
+// import { createSkill } from '../../../utils/createSkill'
 
 vi.mock('axios')
 
@@ -24,7 +26,11 @@ describe('MySkills', () => {
   }
 
   describe('FETCH_SKILLS', () => {
-    it('should fetch a list of skills', async () => {
+    beforeEach(() => {
+      setActivePinia(createPinia())
+    })
+
+    it('should fetch data from the skills api', async () => {
       axiosGetMock.mockResolvedValue({
         data: [
           {
@@ -34,8 +40,9 @@ describe('MySkills', () => {
         ]
       })
 
-      const { skillsStore } = renderMySkills()
+      const skillsStore = useSkillsStore()
       await skillsStore.FETCH_SKILLS()
+
       expect(skillsStore.skills).toEqual([
         {
           name: 'JavaScript',
@@ -44,7 +51,7 @@ describe('MySkills', () => {
       ])
     })
 
-    it('should render skills', () => {
+    it('should call the skills api', () => {
       const { skillsStore } = renderMySkills()
       expect(skillsStore.FETCH_SKILLS).toHaveBeenCalled()
     })
