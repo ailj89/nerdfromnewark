@@ -11,7 +11,8 @@ export const useRolesStore = defineStore('roles', () => {
     roles.value = receivedRoles
   }
 
-  const UNIQUE_ROLES = computed(() => Array.isArray(roles) && roles.value.map((role) => role.title))
+  // const UNIQUE_ROLES = computed(() => Array.isArray(roles) && roles.value.map((role) => role.title))
+  const UNIQUE_ROLES = computed(() => roles.value.map((role) => role.title))
 
   return { roles, FETCH_ROLES, UNIQUE_ROLES }
 })
