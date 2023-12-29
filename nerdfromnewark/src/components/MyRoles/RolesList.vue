@@ -1,7 +1,7 @@
 <template>
   <div class="careers">
     <div class="career">
-      <v-card v-for="role in roles" :key="role.company" width="800" class="ma-4">
+      <v-card v-for="role in roles" :key="role.company" class="ma-4">
         <v-list lines="one">
           <v-list-item :title="role.title" :subtitle="role.company" class="text-h4">
             <v-list-item v-for="duty in role.duties" :key="duty" :title="duty"> </v-list-item>
