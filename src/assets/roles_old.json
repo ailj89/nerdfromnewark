@@ -1,0 +1,177 @@
+[
+	{	"company": "Robert Half International, Professional Services – Technology",
+		"date_employed":"May 2018 - July 2018",
+		"company_logo": "../images/logos/roberthalf.png",
+		"url": "https://www.roberthalf.com/work-with-us/our-services/long-term-project-consultants",
+		"projects":[
+			{
+				"project_name":"Senior Technical Consultant, Frontend Web Development",
+				"project_details": "Digital, technical, and IT project management consultant and solutions architect within Robert Half Technology’s Salaried Professional Services division. Deployed to organizations on a long-term basis to build consistent processes and provide strategic, futuristic thinking. Training in ReactJS and Angular 2+ via Pluralsight.",
+				"url": ""
+			}					
+		]
+	},
+	{	"company": "Inc Design",
+		"date_employed":"March 2018 - April 2018",
+		"company_logo": "../images/logos/incdesign.webp",
+		"url": "https://www.incdesign.com/",
+		"projects":[
+			{
+				"project_name":"W. R. Berkley 2017 Annual Report",
+				"project_details": "Redesign of W. R. Berkley\"s Annual Report site, including animations, updated with 2017 stats.",
+				"url": "https://products.wrberkley.com/AR/index.html"
+			}					
+		]
+	},
+	{	"company": "AllianceBernstein",
+		"date_employed":"September 2016 - January 2018",
+		"company_logo": "../images/logos/alliancebernstein.png",
+		"url": "https://www.alliancebernstein.com/",
+		"projects": [
+			{
+				"project_name":"Corporate Responsibility",
+				"project_details": "Highlights AllianceBernstein\"s efforts in Global Sustainability, giving back to communities, and active participation in equality and representation.",						
+				"url": "https://www.alliancebernstein.com/corporate/our-firm/corporate-responsibility.htm"
+			},
+			{
+				"project_name":"Inside the Mind of Plan Sponsors",
+				"project_details": "In 2016, AllianceBernstein defined contribution team conducted a web-based survey of over 1,000 plan sponsors. This site focuses on the trends and problem areas as reported by the sponsors.",
+				"url": "https://www.alliancebernstein.com/investments/us/retirement/inside-the-minds-of-plan-sponsors.htm"
+			},
+			{
+				"project_name":"Institutions pages for The Americas, EMEA, and Asia-Pacific",
+				"project_details": "Overview of investment solutions offered by AllianceBernstein for Alternatives, Equities, Fixed-Income, Multi-Asset and Defined Contribution.",
+				"url": "https://www.alliancebernstein.com/institutions/americas/home.htm"
+			}
+		]
+	},
+	{
+		"company": "Alchemy50",
+		"date_employed":"March 2016 - May 2016",
+		"company_logo": "../images/logos/alchemy50.png",
+		"url": "http://www.alchemy50.com/",
+		"projects": [
+			{
+				"project_name":"Financial Portfolio Dashboard",
+				"project_details": "Created a prototype of a financial portfolio application dashboard in jQuery. The application let users search and favorite stock information, manage e-mails, calendars, and meetings. Transitioned the prototype from jQuery to AngularJS.",
+				"url": ""
+			}
+		]
+	},
+	{
+		"company": "Mammoth Advertising",
+		"date_employed":"January 2016 - March 2016",
+		"company_logo": "../images/logos/mammoth.png",
+		"url": "https://www.mammothnyc.com/",
+		"projects": [
+			{
+				"project_name":"My Big Fat Greek Wedding 2",
+				"project_details": "Developed the site to the motion picture which displayed the trailer and gifs of scenes from the film.",
+				"url": "https://web.archive.org/web/20160331120526/http://mybigfatgreekweddingmovie.com/"
+			},
+			{
+				"project_name":"Share A Praryer: Miracles From Heaven",
+				"project_details": "An e-card generator, via Canvas, where users selected a message, a background, and entered a recipient. The generated e-card may be downloaded by users or shared via social media.",
+				"url": ""
+			}
+		]
+	},
+	{
+		"company": "Pink Stone Capital Incubator",
+		"date_employed":"July 2014 - December 2015",
+		"company_logo": "../images/logos/psci.png",
+		"url": "",
+		"projects": [
+			{
+				"project_name":"CureHero",
+				"project_details": "A social eduction platform for children and teens.",
+				"url": ""
+			},
+			{
+				"project_name":"Avatar Creator",
+				"project_details": "An avatar creator for children and teens to be used for CureHero and Token, a money management app.",
+				"url": ""
+			},
+			{
+				"project_name":"Gypsy",
+				"project_details": "A ride sharing Uber-like service, converted to a webapp via Phonegap, and connected to a custom API, RAPID.",
+				"url": ""
+			},
+			{
+				"project_name":"JetPack",
+				"project_details": "A same-day delivery service via bike messengers.",						
+				"url": ""
+			}
+		]
+	},
+	{	"company": "Thinkful",
+		"date_employed":"January 2014 - July 2014",
+		"company_logo": "../images/logos/thinkful.png",
+		"url": "https://www.thinkful.com/",
+		"projects": [
+			{
+				"project_name":"Mentor",
+				"project_details": "Held weekly one-on-one sessions with students taking the Front-End Web Development course. Walked through assigments, provided feedback, showed alternate solutions and resources based on assignments.",
+				"url": ""
+			}
+		]				
+	},
+	{	"company": "3rdWard",
+		"date_employed":"August 2013 - October 2013",
+		"company_logo": "../images/logos/3rdward.png",
+		"url": "https://www.3rdward.com",
+		"projects": [
+			{
+				"project_name":"Front-End Web Developement Instructor",
+				"project_details": "Taught a HTML5/CSS3 course and a jQuery course. Provided insightful feedback on assignments.",
+				"url": ""	
+			}
+		]				
+	},
+	{	"company": "General Assembly",
+		"date_employed":"September 2012 - October 2014",
+		"company_logo": "../images/logos/generalassembly.png",
+		"url": "http://generalassemb.ly/",
+		"projects": [
+			{
+				"project_name":"Front-End Web Developement (FEWD) and Web Development Immersive (WDI)",
+				"project_details": "Expert-in-Residence, assisted in educating students who were interested in HTML, CSS, JavaScript, and jQuery. Held tutoring sessions on-site and online. Provided insightful feedback on assignments.",
+				"url": "https://generalassemb.ly/education"
+			}
+		]				
+	},
+	{	"company": "Nextdrift Technologies",
+		"date_employed":"January 2012 - May 2012",
+		"company_logo": "../images/logos/nextdrift.png",
+		"url": "http://nextdrift.com/",
+		"projects": [
+			{
+				"project_name":"Become A Leader (BALO)",
+				"project_details": "Developed a virtual library for those who would like to improve their leadership skills.",
+				"url": ""
+			},
+			{
+				"project_name":"Topcast",
+				"project_details": "Created a customizable ticker feed for restaurants via jQuery which displayed news for sports (Sportcast) and local weather (Weathercast).",
+				"url": "http://topcast.tv/ndr/"
+			}
+		]				
+	},
+	{	"company": "Bentley University",
+		"date_employed":"October 2008 - December 2011",
+		"company_logo": "../images/logos/bentley.png",
+		"url": "https://www.bentley.edu/",
+		"projects": [
+			{
+				"project_name":"Center of Alumni, Parents, and Friends",
+				"project_details": "Assistant Web Developer for the Center of Alumni, Parents, and Friends at Bentley University. Developed a flip-book for the monthly newsletter, The Bentley Brief. Created monthly reports in Excel for interactions with the newsletter. Managed social media posts for Facebook, Twitter, and Linkedin accounts.",
+				"url": ""
+			},
+			{
+				"project_name":"Web Services",
+				"project_details": "Assistant Web Developer for Web Services at Bentley University. Managed, maintained, and updated HTML and CSS for bentley.edu.",
+				"url": ""
+			}
+		]				
+	}
+]
