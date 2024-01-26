@@ -12,9 +12,17 @@ export interface Role {
   date: string
   title: string
   type?: string
+  projects?: Project[]
+  logo?: string
 }
 
 export interface Skill {
   name: string
   years: number
+}
+
+export interface Project {
+  name: string
+  details: string
+  url: string
 }

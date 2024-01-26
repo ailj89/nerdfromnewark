@@ -56,28 +56,28 @@
       ],
       "projects": [
         {
-          "project_name": "Campaign Wizard",
-          "project_details": "Backstage tool which allows users to create campaigns, track products, add/interact with influencers, and view/provide feedback for content , an all-in-one process.",
+          "name": "Campaign Wizard",
+          "details": "Backstage tool which allows users to create campaigns, track products, add/interact with influencers, and view/provide feedback for content , an all-in-one process.",
           "url": ""
         },
         {
-          "project_name": "Reporting Platform",
-          "project_details": "Backstage platform to view statistics, such as sales, top performers, day-to-day views for content on a per product/per influencer/ or per platform basis.",
+          "name": "Reporting Platform",
+          "details": "Backstage platform to view statistics, such as sales, top performers, day-to-day views for content on a per product/per influencer/ or per platform basis.",
           "url": ""
         },
         {
-          "project_name": "Influencer Portal",
-          "project_details": "Allows influencers to upload concepts, content, and reports for social media posts.",
+          "name": "Influencer Portal",
+          "details": "Allows influencers to upload concepts, content, and reports for social media posts.",
           "url": ""
         },
         {
-          "project_name": "Custom Landing Pages",
-          "project_details": "Tool to allow followers/viewers of social media posts to select the retailer where the product is available to purchase the product.",
+          "name": "Custom Landing Pages",
+          "details": "Tool to allow followers/viewers of social media posts to select the retailer where the product is available to purchase the product.",
           "url": ""
         },
         {
-          "project_name": "Retail Syndication",
-          "project_details": "Content syndication for products allowing users of Backstage to track every step of syndication from content creation to placement of the content on the product page of retailers.",
+          "name": "Retail Syndication",
+          "details": "Content syndication for products allowing users of Backstage to track every step of syndication from content creation to placement of the content on the product page of retailers.",
           "url": ""
         }
       ],
@@ -109,8 +109,8 @@
       ],
       "projects": [
         {
-          "project_name": "W. R. Berkley 2017 Annual Report",
-          "project_details": "Redesign of W. R. Berkley\"s Annual Report site, including animations, updated with 2017 stats.",
+          "name": "W. R. Berkley 2017 Annual Report",
+          "details": "Redesign of W. R. Berkley's Annual Report site, including animations, updated with 2017 stats.",
           "url": "https://products.wrberkley.com/AR/index.html"
         }
       ]
@@ -128,18 +128,18 @@
       ],
       "projects": [
         {
-          "project_name": "Corporate Responsibility",
-          "project_details": "Highlights AllianceBernstein\"s efforts in Global Sustainability, giving back to communities, and active participation in equality and representation.",
+          "name": "Corporate Responsibility",
+          "details": "Highlights AllianceBernstein\"s efforts in Global Sustainability, giving back to communities, and active participation in equality and representation.",
           "url": "https://www.alliancebernstein.com/corporate/our-firm/corporate-responsibility.htm"
         },
         {
-          "project_name": "Inside the Mind of Plan Sponsors",
-          "project_details": "In 2016, AllianceBernstein defined contribution team conducted a web-based survey of over 1,000 plan sponsors. This site focuses on the trends and problem areas as reported by the sponsors.",
+          "name": "Inside the Mind of Plan Sponsors",
+          "details": "In 2016, AllianceBernstein defined contribution team conducted a web-based survey of over 1,000 plan sponsors. This site focuses on the trends and problem areas as reported by the sponsors.",
           "url": "https://www.alliancebernstein.com/investments/us/retirement/inside-the-minds-of-plan-sponsors.htm"
         },
         {
-          "project_name": "Institutions pages for The Americas, EMEA, and Asia-Pacific",
-          "project_details": "Overview of investment solutions offered by AllianceBernstein for Alternatives, Equities, Fixed-Income, Multi-Asset and Defined Contribution.",
+          "name": "Institutions pages for The Americas, EMEA, and Asia-Pacific",
+          "details": "Overview of investment solutions offered by AllianceBernstein for Alternatives, Equities, Fixed-Income, Multi-Asset and Defined Contribution.",
           "url": "https://www.alliancebernstein.com/institutions/americas/home.htm"
         }
       ]
@@ -170,13 +170,13 @@
       ],
       "projects": [
         {
-          "project_name": "My Big Fat Greek Wedding 2",
-          "project_details": "Developed the site to the motion picture which displayed the trailer and gifs of scenes from the film.",
+          "name": "My Big Fat Greek Wedding 2",
+          "details": "Developed the site to the motion picture which displayed the trailer and gifs of scenes from the film.",
           "url": "https://web.archive.org/web/20160331120526/http://mybigfatgreekweddingmovie.com/"
         },
         {
-          "project_name": "Share A Praryer: Miracles From Heaven",
-          "project_details": "An e-card generator, via Canvas, where users selected a message, a background, and entered a recipient. The generated e-card may be downloaded by users or shared via social media.",
+          "name": "Share A Praryer: Miracles From Heaven",
+          "details": "An e-card generator, via Canvas, where users selected a message, a background, and entered a recipient. The generated e-card may be downloaded by users or shared via social media.",
           "url": ""
         }
       ]
@@ -193,23 +193,23 @@
       ],
       "projects": [
         {
-          "project_name": "CureHero",
-          "project_details": "A social eduction platform for children and teens.",
+          "name": "CureHero",
+          "details": "A social eduction platform for children and teens.",
           "url": ""
         },
         {
-          "project_name": "Avatar Creator",
-          "project_details": "An avatar creator for children and teens to be used for CureHero and Token, a money management app.",
+          "name": "Avatar Creator",
+          "details": "An avatar creator for children and teens to be used for CureHero and Token, a money management app.",
           "url": ""
         },
         {
-          "project_name": "Gypsy",
-          "project_details": "A ride sharing Uber-like service, converted to a webapp via Phonegap, and connected to a custom API, RAPID.",
+          "name": "Gypsy",
+          "details": "A ride sharing Uber-like service, converted to a webapp via Phonegap, and connected to a custom API, RAPID.",
           "url": ""
         },
         {
-          "project_name": "JetPack",
-          "project_details": "A same-day delivery service via bike messengers.",
+          "name": "JetPack",
+          "details": "A same-day delivery service via bike messengers.",
           "url": ""
         }
       ]
@@ -248,7 +248,7 @@
       ],
       "projects": [
         {
-          "project_name": "Front-End Web Developement (FEWD) and Web Development Immersive (WDI)",
+          "name": "Front-End Web Developement (FEWD) and Web Development Immersive (WDI)",
           "url": "https://generalassemb.ly/education/front-end-web-development"
         }
       ]
@@ -264,13 +264,13 @@
       ],
       "projects": [
         {
-          "project_name": "Become A Leader (BALO)",
-          "project_details": "Developed a virtual library for those who would like to improve their leadership skills.",
+          "name": "Become A Leader (BALO)",
+          "details": "Developed a virtual library for those who would like to improve their leadership skills.",
           "url": ""
         },
         {
-          "project_name": "Topcast",
-          "project_details": "Created a customizable ticker feed for restaurants via jQuery which displayed news for sports (Sportcast) and local weather (Weathercast).",
+          "name": "Topcast",
+          "details": "Created a customizable ticker feed for restaurants via jQuery which displayed news for sports (Sportcast) and local weather (Weathercast).",
           "url": "http://topcast.tv/ndr/"
         }
       ]
