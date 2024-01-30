@@ -14,6 +14,7 @@ export interface Role {
   type?: string
   projects?: Project[]
   logo?: string
+  url?: string
 }
 
 export interface Skill {

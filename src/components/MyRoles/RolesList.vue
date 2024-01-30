@@ -3,10 +3,24 @@
     <div class="career">
       <v-card v-for="role in roles" :key="role.company" class="ma-4">
         <v-list lines="two">
+          <v-list-item>
+            <a :href="role.url" target="_blank">
+              <v-img
+                :width="100"
+                aspect-ratio="16/9"
+                cover
+                :src="`../../../public/images/${role.logo}`"
+                :alt="role.company"
+              ></v-img>
+              <v-card-title class="text-h6">
+                {{ role.company }}
+              </v-card-title>
+            </a>
+          </v-list-item>
           <v-list-item
             :title="role.title"
             :subtitle="role.company"
-            :prepend-avatar="`@/src/images/${role.logo}`"
+            :prepend-avatar="`../../../public/images/${role.logo}`"
             class="text-h4"
           >
             <h4>Duties</h4>
@@ -49,3 +63,10 @@ const UNIQUE_ROLES = computed(() => rolesStore.UNIQUE_ROLES)
 
 onMounted(rolesStore.FETCH_ROLES)
 </script>
+
+<style scoped>
+/* v-avatar.v-avatar--density-default {
+  width: 70px;
+  height: 70px;
+} */
+</style>

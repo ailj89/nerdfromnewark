@@ -1,14 +1,15 @@
 <template>
-  <div>
+  <div class="d-flex align-center flex-column">
     <p>
-      Welcome to Nerd From Newark, highlighting my <a href="/roles" target="_self">Career</a> as a Front-End Developer and my <a href="/about" target="_self">hobbies/interest</a>.
+      Welcome to Nerd From Newark, highlighting my
+      <router-link :to="'/roles'">Career</router-link>as a Front-End Developer and my
+      <router-link :to="'/about'">hobbies/interest</router-link>.
     </p>
 
-    <hello-world/>
+    <hello-world />
   </div>
 </template>
 
 <script setup lang="ts">
-import HelloWorld from '../components/HelloWorld.vue';
-
+import HelloWorld from '../components/HelloWorld.vue'
 </script>
