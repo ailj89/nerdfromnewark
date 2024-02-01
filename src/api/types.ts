@@ -25,5 +25,6 @@ export interface Skill {
 export interface Project {
   name: string
   details: string
-  url: string
+  url?: string
+  url2?: string
 }

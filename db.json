@@ -90,7 +90,7 @@
       "logo": "roberthalf.png",
       "location": "Hybrid",
       "date": "May 2018 - July 2018",
-      "company_logo": "oberthalf.png",
+      "company_logo": "roberthalf.png",
       "url": "https://www.roberthalf.com/work-with-us/our-services/long-term-project-consultants",
       "duties": [
         "Senior Consultant within the Salaried Professional Services division for Web Development.",
@@ -103,6 +103,7 @@
       "logo": "incdesign.webp",
       "location": "Hybrid",
       "date": "Mar 2018 - Apr 2018",
+      "url": "https://www.incdesign.com/",
       "duties": [
         "Updated W.R. Berkley Annual Report site, highlighting yearly revenue for 2017.",
         "Enhance user experience by incorporating animations, carousel, and charts utilizing HTML, CSS, JS, and jQuery.",
@@ -112,7 +113,8 @@
         {
           "name": "W. R. Berkley 2017 Annual Report",
           "details": "Redesign of W. R. Berkley's Annual Report site, including animations, updated with 2017 stats.",
-          "url": "https://products.wrberkley.com/AR/index.html"
+          "url": "https://products.wrberkley.com/AR/index.html",
+          "url2": "https://www.incdesign.com/berkley-case-study"
         }
       ]
     },
@@ -121,6 +123,7 @@
       "company": "AllianceBernstein",
       "date": "Sept 2016 - Jan 2018",
       "logo": "alliancebernstein.png",
+      "url": "https://www.alliancebernstein.com/",
       "duties": [
         "Developed and maintained various AB portal sites via Methode.",
         "Worked with QA team to debug and test prior to publishing to production.",

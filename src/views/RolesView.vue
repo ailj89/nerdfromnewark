@@ -1,8 +1,6 @@
 <template>
   <div>
-    <h1 class="text-center">
-      Interested in the roles I've had throughout my career? This is the page for you!
-    </h1>
+    <h1 class="text-center">Interested in my career? Here you will find the details!</h1>
 
     <v-container class="roles-container">
       <v-row>

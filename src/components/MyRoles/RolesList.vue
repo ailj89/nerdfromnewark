@@ -1,45 +1,55 @@
 <template>
   <div class="careers">
     <div class="career">
-      <v-card v-for="role in roles" :key="role.company" class="ma-4">
-        <v-list lines="two">
-          <v-list-item>
-            <a :href="role.url" target="_blank">
-              <v-img
-                :width="100"
-                aspect-ratio="16/9"
-                cover
-                :src="`../../../public/images/${role.logo}`"
-                :alt="role.company"
-              ></v-img>
-              <v-card-title class="text-h6">
-                {{ role.company }}
-              </v-card-title>
-            </a>
-          </v-list-item>
-          <v-list-item
-            :title="role.title"
-            :subtitle="role.company"
-            :prepend-avatar="`../../../public/images/${role.logo}`"
-            class="text-h4"
-          >
-            <h4>Duties</h4>
+      <v-card v-for="role in roles" :key="role.company" class="ma-4 pa-6 bg-grey-lighten-2">
+        <v-list lines="one" class="bg-grey-lighten-2">
+          <v-list-item :title="role.company" :subtitle="role.title" class="d-inline-block text-h4">
+            <template v-slot:title="{ title }">
+              <a :href="role.url" target="_blank" class="text-body-1 d-inline-block">
+                <v-tooltip :text="role.company">
+                  <template v-slot:activator="{ props }">
+                    <v-img
+                      :width="100"
+                      aspect-ratio="16/9"
+                      cover
+                      :src="`../../../public/images/${role.logo}`"
+                      :alt="role.company"
+                      class="d-inline-block"
+                      v-bind="props"
+                    ></v-img>
+                  </template>
+                </v-tooltip>
+                <v-icon icon="mdi-open-in-new"></v-icon>
+              </a>
+            </template>
 
-            <v-list-item v-for="duty in role.duties" :key="duty" :title="duty"> </v-list-item>
+            <template v-slot:subtitle="{ subtitle }">
+              <span class="text-subtitle-1">
+                {{ role.title }}
+              </span>
+            </template>
 
-            <h4>Projects</h4>
+            <h6 class="text-h6 my-3">Responsibilites</h6>
+
+            <v-list-item
+              v-for="(duty, index) in role.duties"
+              :key="index"
+              :title="duty"
+            ></v-list-item>
+
+            <h6 v-if="role?.projects" class="text-h6 my-3">Projects</h6>
 
             <v-list-item v-for="(project, index) in role?.projects" :key="index">
               <div v-if="project.url != ''">
-                <a :href="project.url" target="_blank">
+                <a :href="project.url" target="_blank" class="text-h5">
                   {{ project.name }}
                 </a>
-                <p>{{ project.details }}</p>
+                <p class="text-body-1">{{ project.details }}</p>
               </div>
               <div v-if="project.url == ''">
-                <p>{{ project.name }}</p>
+                <p class="text-h5">{{ project.name }}</p>
 
-                <p>{{ project.details }}</p>
+                <p class="text-body-1">{{ project.details }}</p>
               </div>
             </v-list-item>
           </v-list-item>
@@ -57,16 +67,7 @@ const rolesStore = useRolesStore()
 
 const roles = computed(() => rolesStore.roles)
 
-const UNIQUE_ROLES = computed(() => rolesStore.UNIQUE_ROLES)
-
-// console.log(UNIQUE_ROLES)
+// const UNIQUE_ROLES = computed(() => rolesStore.UNIQUE_ROLES)
 
 onMounted(rolesStore.FETCH_ROLES)
 </script>
-
-<style scoped>
-/* v-avatar.v-avatar--density-default {
-  width: 70px;
-  height: 70px;
-} */
-</style>
