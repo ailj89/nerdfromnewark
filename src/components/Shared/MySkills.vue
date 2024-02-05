@@ -11,7 +11,7 @@
     >
   </v-card-item>
 
-  <v-card-text>
+  <v-card-text class="text-body-1">
     I've began developing in 2006 at the age of 16 and my career as a developer began in 2008. In
     the 15 years since, I have developed sites and web apps for F500 companies, investment firms,
     finiancial institutions, motion pictures, marketing, influencer marketing, analytics and
@@ -19,24 +19,52 @@
     Front-End Development courses. More extensive details on my career may be read
     <router-link :to="'/roles'">here</router-link>.
 
-    <h3 class="my-4">Skills I've learned over the years include:</h3>
+    <v-row>
+      <v-col cols="6">
+        <h6 class="my-4 text-h6">Skills I've learned over the years include:</h6>
 
-    <v-list-item
-      v-for="skill in skills"
-      :key="skill.name"
-      :title="skill.name"
-      :subtitle="skill.years + ' years'"
-    ></v-list-item>
+        <v-list-item
+          v-for="skill in skills"
+          :key="skill.name"
+          :title="skill.name"
+          :subtitle="skill.years + ' years'"
+          class="text-body-2"
+        ></v-list-item>
+      </v-col>
+
+      <v-col cols="6">
+        <h6 class="my-4 text-h6">Skills/technologies I am learning/interested in include:</h6>
+
+        <v-list-item
+          v-for="interest in interests"
+          :key="interest.name"
+          :title="interest.name"
+          class="text-body-2"
+        ></v-list-item>
+      </v-col>
+    </v-row>
   </v-card-text>
 </template>
 
 <script lang="ts" setup>
 import { onMounted, computed } from 'vue'
 import { useSkillsStore } from '@/stores/skills'
+import { useInterestsStore } from '@/stores/interests'
 
 const skillsStore = useSkillsStore()
 
 const skills = computed(() => skillsStore.skills)
 
+const interestsStore = useInterestsStore()
+
+const interests = computed(() => interestsStore.interests)
+
 onMounted(skillsStore.FETCH_SKILLS)
+onMounted(interestsStore.FETCH_INTERESTS)
 </script>
+
+<style scoped>
+a {
+  color: var(--color-text);
+}
+</style>

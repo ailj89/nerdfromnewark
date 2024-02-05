@@ -3,42 +3,50 @@
     {
       "activity": "Cooking",
       "name": "Baking",
-      "favorites": "Bread, Mac n Cheese, Peach Cobler, Pork Belly, Ramen"
+      "favorites": "Bread, Mac n Cheese, Peach Cobler, Pork Belly, Ramen",
+      "icon": "chef-hat"
     },
     {
       "activity": "Playing",
       "name": "Board Games",
-      "favorites": "Codenames, Ex Libris, Nemesis, Street Fighter"
+      "favorites": "Codenames, Ex Libris, Nemesis, Street Fighter",
+      "icon": "dice-6-outline"
     },
     {
       "activity": "Playing",
       "name": "Video Games",
-      "favorites": "Diablo, Final Fantasy, Mortal Kombat, Street Fighter"
+      "favorites": "Diablo, Final Fantasy, Mortal Kombat, Street Fighter",
+      "icon": "controller"
     },
     {
       "activity": "Reading",
       "name": "Comics",
-      "favorites": "Ice Cream Man, Hulk, She-Hulk, Street Fighter, The Walking Dead, X-Men"
+      "favorites": "Ice Cream Man, Hulk, She-Hulk, Street Fighter, The Walking Dead, X-Men",
+      "icon": "book-open-page-variant"
     },
     {
       "activity": "Watching",
       "name": "Anime",
-      "favorites": "Cowboy Bebop, Dragon Ball Z, Gundam, Outlaw Star, Trigun"
+      "favorites": "Cowboy Bebop, Dragon Ball Z, Gundam, Outlaw Star, Trigun",
+      "icon": "television-classic"
     },
     {
       "activity": "Watching",
-      "name": "Comedy Movies",
-      "favorites": "Codenames, Ex Libris, Nemesis, Street Fighter"
+      "name": "Comedies",
+      "favorites": "Family Guy, The Harley Quinn Show, South Park, Ted",
+      "icon": "drama-masks"
     },
     {
       "activity": "Watching",
-      "name": "Horror Movies",
-      "favorites": "Child's Play, Friday the 13th, Halloween, Night of the Living Dead, Nightmare on Elm Street, Return of the Living Dead"
+      "name": "Horror",
+      "favorites": "Child's Play, Friday the 13th, Halloween, Night of the Living Dead, Nightmare on Elm Street, Return of the Living Dead",
+      "icon": "knife"
     },
     {
       "activity": "Watching",
       "name": "Sports",
-      "favorites": "Baseball, Basketball, Football, Wrestling"
+      "favorites": "Baseball, Basketball, Football, Wrestling",
+      "icon": "basketball"
     }
   ],
   "roles": [
@@ -329,7 +337,7 @@
       "years": 11
     },
     {
-      "name": "AngularJS",
+      "name": "AngularJS (not to be confused with Angular)",
       "years": 9
     },
     {
@@ -347,6 +355,26 @@
     {
       "name": "Responsive Web Design",
       "years": 11
+    }
+  ],
+  "interests": [
+    {
+      "name": "Tailwind"
+    },
+    {
+      "name": "Pinia"
+    },
+    {
+      "name": "Nuxt"
+    },
+    {
+      "name": "Typescript"
+    },
+    {
+      "name": "React"
+    },
+    {
+      "name": "Angular"
     }
   ]
 }

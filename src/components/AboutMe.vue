@@ -17,7 +17,7 @@
               <v-window-item v-for="n in 2" :key="n" :value="n">
                 <v-container fluid>
                   <v-row>
-                    <v-card width="1000">
+                    <v-card width="1000" class="bg-grey-lighten-2">
                       <my-skills v-if="n == 1" />
                       <my-hobbies v-if="n == 2" />
                     </v-card>
@@ -40,3 +40,9 @@ import MyHobbies from '@/components/Shared/MyHobbies.vue'
 
 const tab = ref(null)
 </script>
+
+<style scoped>
+a {
+  color: var(--color-text);
+}
+</style>

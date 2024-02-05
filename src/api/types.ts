@@ -2,6 +2,12 @@ export interface Hobby {
   activity?: string
   name: string
   favorites?: string
+  icon?: string
+}
+
+export interface Interest {
+  name: string
+  icon?: string
 }
 
 export interface Role {
@@ -20,6 +26,7 @@ export interface Role {
 export interface Skill {
   name: string
   years: number
+  icon?: string
 }
 
 export interface Project {

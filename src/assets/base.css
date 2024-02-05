@@ -98,3 +98,13 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+a {
+  color: white;
+  font-weight: bold;
+}
+
+a:hover,
+a:visited {
+  color: #6200ea !important;
+}

@@ -6,7 +6,7 @@
           width="200"
           max-width="400"
           height="200"
-          image="../../public/images/profile.jpeg"
+          image="../../public/images/profile.jpg"
           title="Career"
           theme="dark"
         ></v-card>

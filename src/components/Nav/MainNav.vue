@@ -1,5 +1,5 @@
 <template>
-  <header>
+  <header class="pt-5 pl-5">
     <div>
       <router-link :to="{ name: 'Home' }" class="d-inline-block mx-2">
         <img alt="Nerd From Newark" class="logo" src="@/assets/nfn.png" width="125" height="125" />
