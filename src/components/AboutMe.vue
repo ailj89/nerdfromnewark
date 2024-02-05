@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="d-flex align-center flex-column">
-      <h1>Andre Jordan</h1>
+      <h3 class="text-h3 text-center pa-4">Who is Andre Jordan?</h3>
 
       <v-container>
         <v-row>

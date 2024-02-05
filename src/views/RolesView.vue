@@ -1,6 +1,8 @@
 <template>
   <div>
-    <h1 class="text-center">Interested in my career? Here you will find the details!</h1>
+    <h3 class="text-h3 text-center pa-4">
+      Interested in my career? Here are the details you seek!
+    </h3>
 
     <v-container class="roles-container">
       <v-row>
@@ -21,7 +23,7 @@
 </template>
 
 <script lang="ts" setup>
-import RolesFilter from '@/components/SideBars/RolesFilter.vue'
+// import RolesFilter from '@/components/SideBars/RolesFilter.vue'
 import RolesList from '@/components/MyRoles/RolesList.vue'
 </script>
 

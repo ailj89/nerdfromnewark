@@ -10,7 +10,7 @@
 
         <ul>
           <li class="d-inline-block mx-2" v-for="item in navItems" :key="item.name">
-            <router-link :to="item.url">
+            <router-link :to="item.url" class="navLink">
               <v-icon>mdi-{{ item.icon }}</v-icon>
               {{ item.name }}
             </router-link>
@@ -48,6 +48,10 @@ const navItems = [
 </script>
 
 <style scoped>
+header {
+  border-bottom: 2px solid var(--color-text);
+}
+
 nav {
   position: relative;
   top: -50px;

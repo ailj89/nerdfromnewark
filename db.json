@@ -362,6 +362,11 @@
       "icon": "nodejs"
     },
     {
+      "name": "Axios",
+      "years": 2,
+      "icon": "api"
+    },
+    {
       "name": "Vue",
       "years": 2,
       "icon": "vuejs"

@@ -2,21 +2,26 @@
   <v-card-item>
     <v-card-title>Front-End Developer</v-card-title>
 
-    <v-card-subtitle
-      ><a href="https://www.linkedin.com/in/andre-l-jordan" target="_blank">LinkedIn</a> |
-      <a href="../assets/Andre_Jordan_Resume.pdf" target="_blank" download
+    <v-card-subtitle>
+      <a class="navLink" href="https://www.linkedin.com/in/andre-l-jordan" target="_blank"
+        >LinkedIn</a
+      >
+      |
+      <a class="navLink" href="../assets/Andre_Jordan_Resume.pdf" target="_blank" download
         >Resume</a
       ></v-card-subtitle
     >
   </v-card-item>
 
   <v-card-text class="text-body-1">
-    I've began developing in 2006 at the age of 16 and my career as a developer began in 2008. In
-    the 15 years since, I have developed sites and web apps for F500 companies, investment firms,
-    finiancial institutions, motion pictures, marketing, influencer marketing, analytics and
-    startups. During that time, I also have 2 years experience of teaching and assisting in
-    Front-End Development courses. More extensive details on my career may be read
-    <router-link :to="'/roles'">here</router-link>.
+    I started developing in 2006 at the age of 16 when I accidentally clicked View Source one day
+    and technically my career as a developer began in 2008 once I got my first freelance role on
+    campus at Bentley University, creating a website for Prom Dress donations. In the years since, I
+    have developed sites and web apps for F500 companies, investment firms, finiancial institutions,
+    motion pictures, marketing and influencer marketing companies, analytics and startups. During
+    that time, I also have 2 years experience of teaching and assisting in Front-End Development
+    courses. More extensive details on my career may be read
+    <router-link class="navLink" :to="'/roles'">here</router-link>.
 
     <v-row>
       <v-col cols="6">

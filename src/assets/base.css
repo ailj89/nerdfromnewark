@@ -99,12 +99,17 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-a {
-  color: white;
+.link,
+.navLink {
+  color: #6200ea;
   font-weight: bold;
 }
 
-a:hover,
-a:visited {
-  color: #6200ea !important;
+.link:visited {
+  color: var(--color-text);
+}
+
+.link:hover,
+.navLink:hover {
+  color: white !important;
 }
