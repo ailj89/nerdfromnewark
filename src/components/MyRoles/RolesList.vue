@@ -19,7 +19,6 @@
                     ></v-img>
                   </template>
                 </v-tooltip>
-                <v-icon icon="mdi-open-in-new"></v-icon>
               </a>
             </template>
 
@@ -71,3 +70,9 @@ const roles = computed(() => rolesStore.roles)
 
 onMounted(rolesStore.FETCH_ROLES)
 </script>
+
+<style scoped>
+a {
+  color: var(--color-text);
+}
+</style>

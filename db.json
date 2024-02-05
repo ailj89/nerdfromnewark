@@ -2,7 +2,7 @@
   "hobbies": [
     {
       "activity": "Cooking",
-      "name": "Baking",
+      "name": "& Baking",
       "favorites": "Bread, Mac n Cheese, Peach Cobler, Pork Belly, Ramen",
       "icon": "chef-hat"
     },
@@ -33,19 +33,19 @@
     {
       "activity": "Watching",
       "name": "Comedies",
-      "favorites": "Family Guy, The Harley Quinn Show, South Park, Ted",
+      "favorites": "Boondocks, Dave Chappelle, Family Guy, The Harley Quinn Show, South Park, Ted",
       "icon": "drama-masks"
     },
     {
       "activity": "Watching",
       "name": "Horror",
-      "favorites": "Child's Play, Friday the 13th, Halloween, Night of the Living Dead, Nightmare on Elm Street, Return of the Living Dead",
+      "favorites": "Child's Play, Evil Dead, Friday the 13th, Halloween, Night of the Living Dead, Nightmare on Elm Street, Return of the Living Dead",
       "icon": "knife"
     },
     {
       "activity": "Watching",
       "name": "Sports",
-      "favorites": "Baseball, Basketball, Football, Wrestling",
+      "favorites": "Baseball, Basketball, Football, WWE, AEW",
       "icon": "basketball"
     }
   ],
@@ -260,8 +260,12 @@
       ],
       "projects": [
         {
-          "name": "Front-End Web Developement (FEWD) and Web Development Immersive (WDI)",
+          "name": "Front-End Web Developement (FEWD)",
           "url": "https://generalassemb.ly/education/front-end-web-development"
+        },
+        {
+          "name": "Web Development Immersive (WDI)",
+          "url": ""
         }
       ]
     },
@@ -314,67 +318,88 @@
   "skills": [
     {
       "name": "HTML",
-      "years": 15
+      "years": 15,
+      "icon": "language-html5"
     },
     {
       "name": "CSS",
-      "years": 15
+      "years": 15,
+      "icon": "language-css3"
     },
     {
       "name": "JavaScript",
-      "years": 15
+      "years": 15,
+      "icon": "language-javascript"
     },
     {
       "name": "jQuery",
-      "years": 11
-    },
-    {
-      "name": "Node.js",
-      "years": 9
+      "years": 11,
+      "icon": "jquery"
     },
     {
       "name": "Restful APIs",
-      "years": 11
-    },
-    {
-      "name": "AngularJS (not to be confused with Angular)",
-      "years": 9
-    },
-    {
-      "name": "Bootstrap",
-      "years": 9
-    },
-    {
-      "name": "Vue",
-      "years": 2
-    },
-    {
-      "name": "Vuetify",
-      "years": 2
+      "years": 11,
+      "icon": "api"
     },
     {
       "name": "Responsive Web Design",
-      "years": 11
+      "years": 11,
+      "icon": "responsive"
+    },
+    {
+      "name": "AngularJS (not to be confused with Angular)",
+      "years": 9,
+      "icon": "angularjs"
+    },
+    {
+      "name": "Bootstrap",
+      "years": 9,
+      "icon": "bootstrap"
+    },
+    {
+      "name": "Node.js",
+      "years": 9,
+      "icon": "nodejs"
+    },
+    {
+      "name": "Vue",
+      "years": 2,
+      "icon": "vuejs"
+    },
+    {
+      "name": "Vuetify",
+      "years": 2,
+      "icon": "vuetify"
     }
   ],
   "interests": [
     {
-      "name": "Tailwind"
+      "name": "Angular",
+      "icon": "angularjs"
     },
     {
-      "name": "Pinia"
+      "name": "Nuxt",
+      "icon": "nuxt"
     },
     {
-      "name": "Nuxt"
+      "name": "Pinia",
+      "icon": ""
     },
     {
-      "name": "Typescript"
+      "name": "React",
+      "icon": "react"
     },
     {
-      "name": "React"
+      "name": "Tailwind",
+      "icon": "tailwind"
     },
     {
-      "name": "Angular"
+      "name": "Typescript",
+      "icon": "language-typescript"
+    },
+    {
+      "name": "Vue Test Utils",
+      "icon": "ab-testing"
     }
   ]
 }

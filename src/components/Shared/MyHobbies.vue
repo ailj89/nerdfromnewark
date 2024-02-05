@@ -3,6 +3,7 @@
     <v-card-title>Nerd Extraordinaire</v-card-title>
 
     <v-card-subtitle>
+      <a href="https://shorturl.at/clqQT" target="_blank">Board Game Collection</a> |
       <a href="https://boredga.me/" target="_blank">Bored?Games!</a> (In Development)
     </v-card-subtitle>
   </v-card-item>
