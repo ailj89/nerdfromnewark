@@ -12,7 +12,8 @@
               image="../../public/images/profile.jpg"
               title="Career"
               theme="dark"
-            ></v-card>
+            >
+            </v-card>
           </router-link>
         </div>
       </v-col>
@@ -43,7 +44,7 @@
               height="200"
               title="Projects"
               theme="dark"
-              image="../../public/images/shelf.jpg"
+              image="../../public/images/projects.jpg"
             >
             </v-card>
           </router-link>
@@ -70,11 +71,14 @@
   /* z-index: -1; */
   transition: 0.3s;
 }
-
 .animate_color:hover::before {
   animation: animate 2s linear infinite;
   height: 202px;
   width: 203px;
+}
+
+.animated_card:hover .v-card-title {
+  background: #0088c7 !important;
 }
 
 @keyframes animate {

@@ -40,7 +40,9 @@
       </v-col>
 
       <v-col cols="6">
-        <h6 class="my-4 text-h6">Skills/technologies I am learning/interested in include:</h6>
+        <h6 class="my-4 text-h6">
+          Skills/technologies I am currently learning/interested in include:
+        </h6>
 
         <v-list lines="two" class="bg-grey-lighten-2">
           <v-list-item

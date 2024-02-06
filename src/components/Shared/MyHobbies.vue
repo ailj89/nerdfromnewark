@@ -10,9 +10,7 @@
 
   <v-card-text class="text-body-1">
     There are many aspects to me, I am a son, a brother, a pet owner, a nerd, a friend, and many
-    more but most important of all, I am a Human. Here is a my
-    <a href="" target="_blank">Myers-Briggs</a> personality test. The following is a modest insight
-    of who I am.
+    more but most important of all, I am a Human. The following is a modest insight of who I am.
 
     <br />
     <br />

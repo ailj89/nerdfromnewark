@@ -347,7 +347,7 @@
       "icon": "responsive"
     },
     {
-      "name": "AngularJS (not to be confused with Angular)",
+      "name": "AngularJS",
       "years": 9,
       "icon": "angularjs"
     },
@@ -388,7 +388,7 @@
     },
     {
       "name": "Pinia",
-      "icon": ""
+      "icon": "state-machine"
     },
     {
       "name": "React",

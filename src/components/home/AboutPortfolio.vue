@@ -74,6 +74,11 @@ const tools = [
     purpose: 'API requests.'
   },
   {
+    name: 'Netlify',
+    icon: 'server-outline',
+    purpose: 'Hosting/deployment.'
+  },
+  {
     name: 'Love',
     icon: 'heart',
     purpose: 'Because why do something if you are not passionate about it?'
