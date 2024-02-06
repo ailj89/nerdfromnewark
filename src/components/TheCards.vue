@@ -15,7 +15,8 @@
             ></v-card>
           </router-link>
         </div>
-
+      </v-col>
+      <v-col cols="auto">
         <div class="animated_card animate_color">
           <router-link class="navLink" :to="'/about'">
             <v-card
@@ -30,7 +31,9 @@
             </v-card>
           </router-link>
         </div>
+      </v-col>
 
+      <v-col cols="auto">
         <div class="animated_card animate_color">
           <router-link class="navLink" :to="'/projects'">
             <v-card
