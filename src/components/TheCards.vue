@@ -82,44 +82,4 @@
     filter: hue-rotate(350deg);
   }
 }
-
-/* .animate_border {
-  overflow: hidden;
-}
-
-.animate_border::before {
-  position: absolute;
-  content: '';
-  height: 180%;
-  width: 10%;
-  height: 200px;
-  width: 200px;
-  background: white;
-  transform: rotate(45deg);
-  z-index: -1;
-}
-
-.animate_border:hover::before {
-  animation: animate2 2s linear infinite;
-  height: 202px;
-  width: 203px;
-}
-
-.animate_border::after {
-  position: absolute;
-  content: '';
-  inset: 5px;
-  background: black;
-  border-radius: 8px;
-  z-index: -1;
-}
-
-@keyframes animate2 {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
 </style>
