@@ -6,9 +6,9 @@
       </router-link>
 
       <nav class="d-inline-block mx-2" bordered>
-        <h1 class="d-inline-block mx-2">{{ title }}</h1>
+        <h4 class="d-inline-block mx-2 text-h4">{{ title }}</h4>
 
-        <ul>
+        <ul class="mt-3 text-subtitle-1">
           <li class="d-inline-block mx-2" v-for="item in navItems" :key="item.name">
             <router-link :to="item.url" class="navLink">
               <v-icon>mdi-{{ item.icon }}</v-icon>
@@ -30,14 +30,14 @@ const navItems = [
     icon: 'home'
   },
   {
+    name: 'Career',
+    url: '/roles',
+    icon: 'briefcase-outline'
+  },
+  {
     name: 'About',
     url: '/about',
     icon: 'information-outline'
-  },
-  {
-    name: 'Roles',
-    url: '/roles',
-    icon: 'briefcase-outline'
   },
   {
     name: 'Projects',

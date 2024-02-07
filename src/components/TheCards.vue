@@ -25,7 +25,7 @@
               max-width="400"
               height="200"
               class="mx-auto"
-              title="Hobbies"
+              title="About"
               theme="dark"
               image="../../public/images/shelf.jpg"
             >
@@ -61,6 +61,15 @@
   height: 200px;
   width: 200px;
 }
+
+.animated_card:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+.animated_card:hover .v-card-title {
+  background: #0088c7 !important;
+}
+
 .animate_color::before {
   position: absolute;
   content: '';
@@ -68,17 +77,12 @@
   width: 200px;
   background: var(--vt-c-forget-me-not);
   border-radius: 5px;
-  /* z-index: -1; */
   transition: 0.3s;
 }
 .animate_color:hover::before {
   animation: animate 2s linear infinite;
   height: 202px;
   width: 203px;
-}
-
-.animated_card:hover .v-card-title {
-  background: #0088c7 !important;
 }
 
 @keyframes animate {
