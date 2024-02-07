@@ -1,7 +1,20 @@
-_Fix Cards Alignment_
-Update Skills and Hobbies class
+- Home
+  _Fix Cards Alignment_
 
-- Change background to black, font color to blue, add blue border around cards
-  Update Projects page
-  Include links to hobbies listed
-  Include links to skills listed
+- About
+
+  - change background to black or transparent
+  - font color to blue
+  - blue border around cards
+
+- Projects page
+
+  - add projects to db.json
+  - include pics to projects, add to public/projects folder
+
+- Careers
+
+  - make company logos transparent
+
+- Footer
+  - Fix mounting

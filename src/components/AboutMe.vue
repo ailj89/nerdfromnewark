@@ -35,7 +35,7 @@
 
 <script lang="ts" setup>
 import { ref } from 'vue'
-import FilterSidebar from '@/components/SideBars/FilterSidebar.vue'
+// import FilterSidebar from '@/components/SideBars/FilterSidebar.vue'
 import MySkills from '@/components/Shared/MySkills.vue'
 import MyHobbies from '@/components/Shared/MyHobbies.vue'
 

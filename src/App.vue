@@ -1,7 +1,9 @@
 <template>
   <main-nav />
   <router-view />
-  <the-footer />
+  <v-layout>
+    <the-footer />
+  </v-layout>
 </template>
 
 <script setup lang="ts">

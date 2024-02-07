@@ -1,15 +1,17 @@
 <template>
-  <v-footer class="bg-grey-lighten-1">
+  <v-footer color="black">
     <v-row justify="center" no-gutters>
       <v-btn
-        v-for="item in navItems"
+        v-for="item in footerItems"
         :key="item.name"
         color="white"
         variant="text"
         class="mx-2"
         rounded="xl"
       >
-        {{ item.name }}
+        <router-link :to="item.url" class="navLink">
+          {{ item.name }}
+        </router-link>
       </v-btn>
       <v-col class="text-center mt-4" cols="12">
         {{ new Date().getFullYear() }} — <strong>NFN</strong>
@@ -19,21 +21,21 @@
 </template>
 
 <script lang="ts" setup>
-const navItems = [
+const footerItems = [
   {
     name: 'Home',
     url: '/',
     icon: 'home'
   },
   {
+    name: 'Career',
+    url: '/roles',
+    icon: 'briefcase-outline'
+  },
+  {
     name: 'About',
     url: '/about',
     icon: 'information-outline'
-  },
-  {
-    name: 'Roles',
-    url: '/roles',
-    icon: 'briefcase-outline'
   },
   {
     name: 'Projects',
