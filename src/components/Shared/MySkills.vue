@@ -27,7 +27,7 @@
       <v-col cols="6">
         <h6 class="my-4 text-h6">Skills I've learned over the years include:</h6>
 
-        <v-list lines="two" class="bg-grey-lighten-2">
+        <v-list lines="two">
           <v-list-item
             v-for="skill in skills"
             :key="skill.name"
@@ -44,7 +44,7 @@
           Skills/technologies I am currently learning/interested in include:
         </h6>
 
-        <v-list lines="two" class="bg-grey-lighten-2">
+        <v-list lines="two">
           <p class="text-body-2 font-italic">Learning</p>
           <v-list-item
             v-for="learning in learnings"
@@ -57,7 +57,7 @@
 
         <v-divider :thickness="4"></v-divider>
 
-        <v-list lines="two" class="bg-grey-lighten-2">
+        <v-list lines="two">
           <p class="text-body-2 font-italic">Interested In</p>
           <v-list-item
             v-for="interest in interests"

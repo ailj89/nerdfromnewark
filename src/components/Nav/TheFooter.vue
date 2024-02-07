@@ -7,7 +7,7 @@
         </router-link>
       </v-btn>
       <v-col class="text-center mt-4" cols="12">
-        {{ new Date().getFullYear() }} — <strong>NFN</strong>
+        <strong>{{ new Date().getFullYear() }} — NFN</strong>
       </v-col>
     </v-row>
   </v-footer>
@@ -37,3 +37,9 @@ const footerItems = [
   }
 ]
 </script>
+
+<style scoped>
+strong {
+  color: var(--vt-c-forget-me-not);
+}
+</style>

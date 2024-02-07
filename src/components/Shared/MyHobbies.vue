@@ -17,7 +17,7 @@
     When I'm not developing or keeping up with the lastest dev trends, I enjoy spending my time
     doing a multitude of activities such as:
 
-    <v-list lines="two" class="bg-grey-lighten-2">
+    <v-list lines="two">
       <v-list-item
         v-for="hobby in hobbies"
         :key="hobby.name"

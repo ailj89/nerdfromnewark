@@ -17,7 +17,7 @@
               <v-window-item v-for="n in 2" :key="n" :value="n">
                 <v-container fluid>
                   <v-row>
-                    <v-card class="bg-grey-lighten-2">
+                    <v-card flat>
                       <my-skills v-if="n == 1" />
                       <my-hobbies v-if="n == 2" />
                     </v-card>

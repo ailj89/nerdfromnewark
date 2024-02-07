@@ -1,5 +1,12 @@
+- Nav
+
+  - fix alignment
+  - change font color to --vt-c-forget-me-not
+
 - Home
   _Fix Cards Alignment_
+
+  - change card font color to --vt-c-forget-me-not
 
 - About
 
@@ -17,4 +24,5 @@
   - make company logos transparent
 
 - Footer
-  - Fix mounting
+  <!-- - Fix mounting -->
+  - make always on the bottom

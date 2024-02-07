@@ -104,6 +104,10 @@
   width: 203px;
 }
 
+.v-card-title {
+  color: var(--vt-c-forget-me-not);
+}
+
 @keyframes animate {
   50% {
     filter: hue-rotate(350deg);
