@@ -6,7 +6,7 @@
         <v-col cols="1"> </v-col>
 
         <v-col cols="10">
-          <v-card>
+          <v-card class="bg-grey-lighten-2">
             <v-tabs v-model="tab" color="deep-purple-accent-4">
               <v-tab v-for="(project, index) in projects" :key="project.name" :value="index">
                 {{ project.name }}
@@ -21,26 +21,29 @@
               >
                 <v-container fluid>
                   <v-row>
-                    <v-card-title>{{ project.name }}</v-card-title>
+                    <v-card-item>
+                      <v-card-title>
+                        <a :href="project.url" target="_blank">
+                          {{ project.name }}
+                        </a>
+                      </v-card-title>
 
-                    <v-card-text class="text-body-1">
-                      {{ project.details }}
-                    </v-card-text>
+                      <v-card-text class="text-body-1 mt-4">
+                        {{ project.details }}
+                      </v-card-text>
 
-                    <v-list lines="two" class="bg-grey-lighten-2">
-                      <v-list-item
-                        v-for="techstack in project.techstack"
-                        :key="techstack.name"
-                        :title="techstack.name"
-                        :prepend-icon="'mdi-' + techstack.icon"
-                        class="text-body-2"
-                      >
-                        <template v-slot:title="{ name }">
-                          <a :href="project.url" target="_blank" class="text-body-1 d-inline-block">
-                          </a>
-                        </template>
-                      </v-list-item>
-                    </v-list>
+                      <v-list lines="two" class="bg-grey-lighten-2">
+                        <p class="text-body-2 font-italic">Tech Stack</p>
+                        <v-list-item
+                          v-for="stack in project.techstack"
+                          :key="stack.name"
+                          :title="stack.name"
+                          :prepend-icon="'mdi-' + stack.icon"
+                          class="text-body-2"
+                        >
+                        </v-list-item>
+                      </v-list>
+                    </v-card-item>
                   </v-row>
                 </v-container>
               </v-window-item>
@@ -64,77 +67,4 @@ const projects = computed(() => projectsStore.projects)
 const tab = ref(null)
 
 onMounted(projectsStore.FETCH_PROJECTS)
-// const projects = [
-//   {
-//     name: 'Bored? Games!',
-//     details:
-//       'Site to manage my board game collection, inspired by <a href="https://shorturl.at/clqQT" target="_blank">Board Game Geek</a>.',
-//     techstack: [
-//       {
-//         name: 'HTML',
-//         icon: 'language-html5'
-//       },
-//       {
-//         name: 'CSS',
-//         icon: 'language-css3'
-//       },
-//       {
-//         name: 'JavaScript',
-//         icon: 'language-javascript'
-//       },
-//       {
-//         name: 'Node.js',
-//         icon: 'nodejs'
-//       },
-//       {
-//         name: 'Axios',
-//         icon: 'api'
-//       },
-//       {
-//         name: 'Vue',
-//         icon: 'vuejs'
-//       },
-//       {
-//         name: 'Vuetify',
-//         icon: 'vuetify'
-//       },
-//       {
-//         name: 'Nuxt',
-//         icon: 'nuxt'
-//       },
-//       {
-//         name: 'Pinia',
-//         icon: 'fruit-pineapple'
-//       },
-//       {
-//         name: 'Typescript',
-//         icon: 'language-typescript'
-//       },
-//       {
-//         name: 'Vue Test Utils',
-//         icon: 'ab-testing'
-//       },
-//       {
-//         name: 'Prisma',
-//         icon: 'database'
-//       },
-//       {
-//         name: 'Supabase',
-//         icon: ''
-//       },
-//       {
-//         name: 'Netlify',
-//         icon: 'server-outline'
-//       },
-//       {
-//         name: 'Docker',
-//         icon: 'docker'
-//       },
-//       {
-//         name: 'Vitest',
-//         icon: 'ab-testing'
-//       }
-//     ]
-//   }
-// ]
 </script>
