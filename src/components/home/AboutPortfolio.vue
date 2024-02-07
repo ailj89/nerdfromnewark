@@ -21,18 +21,20 @@
     is in this ever evolving field.
   </p>
 
-  <div>
+  <div class="my-4">
     <p class="text-body-1">With that said, this current version of my portfolio is built using:</p>
 
-    <v-list-item
-      v-for="tool in tools"
-      :key="tool.name"
-      :title="tool.name"
-      :subtitle="tool.purpose"
-      :prepend-icon="'mdi-' + tool.icon"
-      class="text-body-2"
-    >
-    </v-list-item>
+    <div class="custom-list">
+      <v-list-item
+        v-for="tool in tools"
+        :key="tool.name"
+        :title="tool.name"
+        :subtitle="tool.purpose"
+        :prepend-icon="'mdi-' + tool.icon"
+        class="text-body-2"
+      >
+      </v-list-item>
+    </div>
   </div>
 </template>
 
@@ -100,3 +102,12 @@ const tools = [
   }
 ]
 </script>
+
+<style scoped>
+.custom-list {
+  border: 1px solid white;
+  border-radius: 10px;
+  margin-top: 5px;
+  padding: 10px;
+}
+</style>

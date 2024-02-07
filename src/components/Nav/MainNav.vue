@@ -1,11 +1,11 @@
 <template>
-  <header class="pt-5 pl-5">
+  <header class="py-5 pl-5">
     <div>
       <router-link :to="{ name: 'Home' }" class="d-inline-block mx-2">
         <img alt="Nerd From Newark" class="logo" src="@/assets/nfn.png" width="125" height="125" />
       </router-link>
 
-      <nav class="d-inline-block mx-2" bordered>
+      <nav class="d-inline-block mx-2">
         <h4 class="d-inline-block mx-2 text-h4">{{ title }}</h4>
 
         <ul class="mt-3 text-subtitle-1">
