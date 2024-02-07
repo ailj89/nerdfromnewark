@@ -1,13 +1,11 @@
-export interface Hobby {
-  activity?: string
-  name: string
-  favorites?: string
-  icon?: string
-}
-
 export interface Interest {
   name: string
   icon?: string
+}
+
+export interface Hobby extends Interest {
+  activity?: string
+  favorites?: string
 }
 
 export interface Role {
@@ -23,10 +21,8 @@ export interface Role {
   url?: string
 }
 
-export interface Skill {
-  name: string
+export interface Skill extends Interest {
   years: number
-  icon?: string
 }
 
 export interface Project {
@@ -34,4 +30,5 @@ export interface Project {
   details: string
   url?: string
   url2?: string
+  techstack?: Interest[]
 }

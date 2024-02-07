@@ -45,6 +45,20 @@
         </h6>
 
         <v-list lines="two" class="bg-grey-lighten-2">
+          <p class="text-body-2 font-italic">Learning</p>
+          <v-list-item
+            v-for="learning in learnings"
+            :key="learning.name"
+            :title="learning.name"
+            class="text-body-2"
+            :prepend-icon="'mdi-' + learning.icon"
+          ></v-list-item>
+        </v-list>
+
+        <v-divider :thickness="4"></v-divider>
+
+        <v-list lines="two" class="bg-grey-lighten-2">
+          <p class="text-body-2 font-italic">Interested In</p>
           <v-list-item
             v-for="interest in interests"
             :key="interest.name"
@@ -60,19 +74,22 @@
 
 <script lang="ts" setup>
 import { onMounted, computed } from 'vue'
+import { useLearningsStore } from '@/stores/learnings'
 import { useSkillsStore } from '@/stores/skills'
 import { useInterestsStore } from '@/stores/interests'
 
-const skillsStore = useSkillsStore()
-
-const skills = computed(() => skillsStore.skills)
-
 const interestsStore = useInterestsStore()
-
 const interests = computed(() => interestsStore.interests)
 
-onMounted(skillsStore.FETCH_SKILLS)
+const learningsStore = useLearningsStore()
+const learnings = computed(() => learningsStore.learnings)
+
+const skillsStore = useSkillsStore()
+const skills = computed(() => skillsStore.skills)
+
 onMounted(interestsStore.FETCH_INTERESTS)
+onMounted(learningsStore.FETCH_LEARNINGS)
+onMounted(skillsStore.FETCH_SKILLS)
 </script>
 
 <style scoped>

@@ -49,14 +49,29 @@ const tools = [
     icon: 'vuetify'
   },
   {
+    name: 'Vite',
+    purpose: 'Building tool and dev server.',
+    icon: 'lightning-bolt'
+  },
+  {
+    name: 'Vitest',
+    purpose: 'Testing Library identical to Jest but complimentary to Vite.',
+    icon: 'ab-testing'
+  },
+  {
     name: 'Vue Test Utils',
-    purpose: 'Testing Library based off Jest with additional features for Vue.',
+    purpose: 'Utility functions for testing Vue.',
+    icon: 'ab-testing'
+  },
+  {
+    name: 'Vue Testing Library',
+    purpose: 'Additional functionality built on Vue Test Utils to simplify testing UI and events.',
     icon: 'ab-testing'
   },
   {
     name: 'Pinia',
     purpose: 'Vue State management.',
-    icon: ''
+    icon: 'fruit-pineapple'
   },
   {
     name: 'NodeJS',

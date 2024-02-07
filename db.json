@@ -377,22 +377,14 @@
       "icon": "vuetify"
     }
   ],
-  "interests": [
-    {
-      "name": "Angular",
-      "icon": "angularjs"
-    },
+  "learnings": [
     {
       "name": "Nuxt",
       "icon": "nuxt"
     },
     {
       "name": "Pinia",
-      "icon": "state-machine"
-    },
-    {
-      "name": "React",
-      "icon": "react"
+      "icon": "fruit-pineapple"
     },
     {
       "name": "Tailwind",
@@ -403,8 +395,107 @@
       "icon": "language-typescript"
     },
     {
+      "name": "Vite",
+      "icon": "lightning-bolt"
+    },
+    {
+      "name": "Vitest",
+      "icon": "ab-testing"
+    },
+    {
       "name": "Vue Test Utils",
       "icon": "ab-testing"
+    },
+    {
+      "name": "Vue Testing Library",
+      "icon": "ab-testing"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Angular",
+      "icon": "angularjs"
+    },
+    {
+      "name": "React",
+      "icon": "react"
+    },
+    {
+      "name": "Redux",
+      "icon": "state-machine"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Bored? Games!",
+      "details": "Site to manage my board game collection, inspired by <a href=\"https://shorturl.at/clqQT\" target=\"_blank\">Board Game Geek</a>.",
+      "url": "https://boredga.me/",
+      "techstack": [
+        {
+          "name": "HTML",
+          "icon": "language-html5"
+        },
+        {
+          "name": "CSS",
+          "icon": "language-css3"
+        },
+        {
+          "name": "JavaScript",
+          "icon": "language-javascript"
+        },
+        {
+          "name": "Node.js",
+          "icon": "nodejs"
+        },
+        {
+          "name": "Axios",
+          "icon": "api"
+        },
+        {
+          "name": "Vue",
+          "icon": "vuejs"
+        },
+        {
+          "name": "Vuetify",
+          "icon": "vuetify"
+        },
+        {
+          "name": "Nuxt",
+          "icon": "nuxt"
+        },
+        {
+          "name": "Pinia",
+          "icon": "fruit-pineapple"
+        },
+        {
+          "name": "Typescript",
+          "icon": "language-typescript"
+        },
+        {
+          "name": "Vue Test Utils",
+          "icon": "ab-testing"
+        },
+        {
+          "name": "Prisma",
+          "icon": "database"
+        },
+        {
+          "name": "Supabase",
+          "icon": ""
+        },
+        {
+          "name": "Netlify",
+          "icon": "server-outline"
+        },
+        {
+          "name": "Docker",
+          "icon": "docker"
+        },
+        {
+          "name": "Vitest",
+          "icon": "ab-testing"
+        }
+      ]
     }
   ]
 }
