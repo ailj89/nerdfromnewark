@@ -6,7 +6,7 @@
 
     <v-container class="roles-container">
       <v-row>
-        <v-col cols="2">
+        <v-col cols="1">
           <p>
             <a href="https://www.linkedin.com/in/andre-l-jordan" target="_blank">LinkedIn</a> |
             <a href="../assets/Andre_Jordan_Resume.pdf" target="_blank" download>Resume</a>
@@ -17,6 +17,7 @@
         <v-col cols="10">
           <roles-list />
         </v-col>
+        <v-col cols="1"></v-col>
       </v-row>
     </v-container>
   </div>

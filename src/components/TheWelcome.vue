@@ -4,7 +4,7 @@
       <v-col cols="1"></v-col>
       <v-col cols="10">
         <div class="d-flex align-center flex-column">
-          <h3 class="text-h3 text-center pa-4">Welcome to Nerd From Newark!</h3>
+          <h3 class="text-h3 text-center pa-4">Welcome To Nerd From Newark!</h3>
 
           <p class="text-body-1 text-center pa-4">
             Here you will find details highlighting my

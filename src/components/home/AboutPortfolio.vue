@@ -81,7 +81,7 @@ const tools = [
   {
     name: 'Typescript',
     icon: 'language-typescript',
-    purpose: 'JS framework for type checking and error handling prior to JS run-time.'
+    purpose: 'Type checking and error handling prior to compiling JS.'
   },
   {
     name: 'Axios',
