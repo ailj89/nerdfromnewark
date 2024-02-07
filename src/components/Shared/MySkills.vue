@@ -20,8 +20,8 @@
     have developed sites and web apps for F500 companies, investment firms, finiancial institutions,
     motion pictures, marketing and influencer marketing companies, analytics and startups. During
     that time, I also have 2 years experience of teaching and assisting in Front-End Development
-    courses. More extensive details on my career may be read
-    <router-link class="navLink" :to="'/roles'">here</router-link>.
+    courses. Check the <router-link class="navLink" :to="'/roles'">Career</router-link> page for
+    more information.
 
     <v-row>
       <v-col cols="6">

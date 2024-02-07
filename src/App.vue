@@ -1,6 +1,10 @@
 <template>
-  <main-nav />
-  <router-view />
+  <v-layout>
+    <main-nav />
+    <v-main>
+      <router-view />
+    </v-main>
+  </v-layout>
   <v-layout>
     <the-footer />
   </v-layout>

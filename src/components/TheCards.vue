@@ -9,10 +9,17 @@
               max-width="400"
               class="mx-auto"
               height="200"
-              image="../../public/images/profile.jpg"
               title="Career"
               theme="dark"
             >
+              <v-img
+                src="../../public/images/profile.jpg"
+                class="align-end"
+                gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
+                height="200px"
+                cover
+              >
+              </v-img>
             </v-card>
           </router-link>
         </div>
@@ -27,8 +34,15 @@
               class="mx-auto"
               title="About"
               theme="dark"
-              image="../../public/images/shelf.jpg"
             >
+              <v-img
+                src="../../public/images/shelf.jpg"
+                class="align-end"
+                gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
+                height="200px"
+                cover
+              >
+              </v-img>
             </v-card>
           </router-link>
         </div>
@@ -44,8 +58,15 @@
               height="200"
               title="Projects"
               theme="dark"
-              image="../../public/images/projects.jpg"
             >
+              <v-img
+                src="../../public/images/projects.jpg"
+                class="align-end"
+                gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
+                height="200px"
+                cover
+              >
+              </v-img>
             </v-card>
           </router-link>
         </div>
@@ -61,15 +82,13 @@
   height: 200px;
   width: 200px;
 }
-
 .animated_card:hover {
   transform: scale(1.1);
   transition: transform 0.3s ease;
 }
 .animated_card:hover .v-card-title {
-  background: #0088c7 !important;
+  background: var(--vt-c-forget-me-not) !important;
 }
-
 .animate_color::before {
   position: absolute;
   content: '';

@@ -1,14 +1,7 @@
 <template>
   <v-footer color="black">
     <v-row justify="center" no-gutters>
-      <v-btn
-        v-for="item in footerItems"
-        :key="item.name"
-        color="white"
-        variant="text"
-        class="mx-2"
-        rounded="xl"
-      >
+      <v-btn v-for="item in footerItems" :key="item.name" variant="text" class="mx-2" rounded="xl">
         <router-link :to="item.url" class="navLink">
           {{ item.name }}
         </router-link>
