@@ -1,33 +1,23 @@
 <template>
   <v-card-item>
     <v-card-title>Nerd Extraordinaire</v-card-title>
-
-    <v-card-subtitle>
-      <a href="https://shorturl.at/clqQT" target="_blank">Board Game Collection</a> |
-      <a href="https://boredga.me/" target="_blank">Bored?Games!</a>
-    </v-card-subtitle>
   </v-card-item>
 
   <v-card-text class="text-body-1">
     There are many aspects to me, I am a son, a brother, a pet owner, a nerd, a friend, and many
-    more but most important of all, I am a Human. The following is a modest insight of who I am.
+    more but most important of all, I am a Human. The following is a modest insight of who I am when
+    I'm not developing or keeping up with the lastest dev trends, I enjoy spending my time doing a
+    multitude of activities such as:
 
-    <br />
-    <br />
-    When I'm not developing or keeping up with the lastest dev trends, I enjoy spending my time
-    doing a multitude of activities such as:
-
-    <v-list lines="two">
-      <v-list-item
-        v-for="hobby in hobbies"
-        :key="hobby.name"
-        :title="hobby.activity + ' ' + hobby.name"
-        :subtitle="'Favorites include ' + hobby.favorites"
-        :prepend-icon="'mdi-' + hobby.icon"
-        class="text-body-2"
-      >
-      </v-list-item>
-    </v-list>
+    <v-list-item
+      v-for="hobby in hobbies"
+      :key="hobby.name"
+      :title="hobby.activity + ' ' + hobby.name"
+      :subtitle="'Favorites include ' + hobby.favorites"
+      :prepend-icon="'mdi-' + hobby.icon"
+      class="text-body-2 mt-3"
+    >
+    </v-list-item>
   </v-card-text>
 </template>
 

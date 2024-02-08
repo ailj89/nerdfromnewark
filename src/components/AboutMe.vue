@@ -18,8 +18,10 @@
                 <v-container fluid>
                   <v-row>
                     <v-card flat outlined color="transparent">
-                      <my-skills v-if="n == 1" />
-                      <my-hobbies v-if="n == 2" />
+                      <div class="custom-list">
+                        <my-skills v-if="n == 1" />
+                        <my-hobbies v-if="n == 2" />
+                      </div>
                     </v-card>
                   </v-row>
                 </v-container>

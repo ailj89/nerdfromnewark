@@ -33,18 +33,14 @@
       <v-col cols="6">
         <h6 class="my-4 text-h6">Skills I've learned over the years include:</h6>
 
-        <!-- <v-list lines="two" outlined color="transparent"> -->
-        <div class="custom-list">
-          <v-list-item
-            v-for="skill in skills"
-            :key="skill.name"
-            :title="skill.name"
-            :subtitle="skill.years + ' years'"
-            :prepend-icon="'mdi-' + skill.icon"
-            class="text-body-2"
-          ></v-list-item>
-        </div>
-        <!-- </v-list> -->
+        <v-list-item
+          v-for="skill in skills"
+          :key="skill.name"
+          :title="skill.name"
+          :subtitle="skill.years + ' years'"
+          :prepend-icon="'mdi-' + skill.icon"
+          class="text-body-2"
+        ></v-list-item>
       </v-col>
 
       <v-col cols="6">
@@ -52,29 +48,25 @@
           Skills/technologies I am currently learning/interested in include:
         </h6>
 
-        <v-list lines="two">
-          <p class="text-body-2 font-italic">Learning</p>
-          <v-list-item
-            v-for="learning in learnings"
-            :key="learning.name"
-            :title="learning.name"
-            class="text-body-2"
-            :prepend-icon="'mdi-' + learning.icon"
-          ></v-list-item>
-        </v-list>
+        <p class="text-body-2 font-italic">Learning</p>
+        <v-list-item
+          v-for="learning in learnings"
+          :key="learning.name"
+          :title="learning.name"
+          class="text-body-2"
+          :prepend-icon="'mdi-' + learning.icon"
+        ></v-list-item>
 
-        <v-divider :thickness="4"></v-divider>
+        <v-divider :thickness="4" class="my-3"></v-divider>
 
-        <v-list lines="two">
-          <p class="text-body-2 font-italic">Interested In</p>
-          <v-list-item
-            v-for="interest in interests"
-            :key="interest.name"
-            :title="interest.name"
-            class="text-body-2"
-            :prepend-icon="'mdi-' + interest.icon"
-          ></v-list-item>
-        </v-list>
+        <p class="text-body-2 font-italic">Interested In</p>
+        <v-list-item
+          v-for="interest in interests"
+          :key="interest.name"
+          :title="interest.name"
+          class="text-body-2"
+          :prepend-icon="'mdi-' + interest.icon"
+        ></v-list-item>
       </v-col>
     </v-row>
   </v-card-text>
