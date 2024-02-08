@@ -1,10 +1,10 @@
 - Nav
 
-  - fix alignment
-  - change font color to --vt-c-forget-me-not
+  <!-- - fix alignment -->
+  <!-- - change font color to --vt-c-forget-me-not -->
 
 - Home
-  _Fix Cards Alignment_
+  <!-- Fix Cards Alignment -->
 
   - change card font color to --vt-c-forget-me-not
 
@@ -21,8 +21,8 @@
 
 - Careers
 
-  - make company logos transparent
+  <!-- - make company logos transparent -->
 
 - Footer
   <!-- - Fix mounting -->
-  - make always on the bottom
+  <!-- - make always on the bottom -->

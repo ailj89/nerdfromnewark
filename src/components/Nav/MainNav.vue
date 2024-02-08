@@ -52,8 +52,16 @@ header {
   border-bottom: 2px solid var(--color-text);
 }
 
-/* nav {
-  position: relative;
-  top: -50px;
-} */
+header.bg-black {
+  color: var(--color-text) !important;
+  font-weight: bold !important;
+}
+
+.v-card .v-card-title {
+  color: var(--color-text) !important;
+}
+
+.v-toolbar-title .v-toolbar-title__placeholder {
+  font-weight: bold !important;
+}
 </style>

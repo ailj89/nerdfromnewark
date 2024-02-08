@@ -14,20 +14,27 @@
   </v-card-item>
 
   <v-card-text class="text-body-1">
-    I started developing in 2006 at the age of 16 when I accidentally clicked View Source one day
-    and technically my career as a developer began in 2008 once I got my first freelance role on
-    campus at Bentley University, creating a website for Prom Dress donations. In the years since, I
-    have developed sites and web apps for F500 companies, investment firms, finiancial institutions,
-    motion pictures, marketing and influencer marketing companies, analytics and startups. During
-    that time, I also have 2 years experience of teaching and assisting in Front-End Development
-    courses. Check the <router-link class="navLink" :to="'/roles'">Career</router-link> page for
-    more information.
+    I started developing in 2006 at the age of 16 when I accidentally clicked
+    <a
+      href="https://firefox-source-docs.mozilla.org/devtools-user/view_source/index.html"
+      target="_blank"
+      class="navLink"
+      >View Source</a
+    >
+    one day and technically my career as a developer began in 2008 once I got my first freelance
+    role on campus at Bentley University, creating a website for Prom Dress donations. In the years
+    since, I have developed sites and web apps for F500 companies, investment firms, finiancial
+    institutions, motion pictures, marketing and influencer marketing companies, analytics and
+    startups. During that time, I also have 2 years experience of teaching and assisting in
+    Front-End Development courses. Check the
+    <router-link class="navLink" :to="'/roles'">Career</router-link> page for more information.
 
     <v-row>
       <v-col cols="6">
         <h6 class="my-4 text-h6">Skills I've learned over the years include:</h6>
 
-        <v-list lines="two">
+        <!-- <v-list lines="two" outlined color="transparent"> -->
+        <div class="custom-list">
           <v-list-item
             v-for="skill in skills"
             :key="skill.name"
@@ -36,7 +43,8 @@
             :prepend-icon="'mdi-' + skill.icon"
             class="text-body-2"
           ></v-list-item>
-        </v-list>
+        </div>
+        <!-- </v-list> -->
       </v-col>
 
       <v-col cols="6">

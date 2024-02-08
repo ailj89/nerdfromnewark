@@ -80,12 +80,3 @@ const tools = [
   }
 ]
 </script>
-
-<style scoped>
-.custom-list {
-  border: 1px solid var(--vt-c-forget-me-not);
-  border-radius: 10px;
-  margin-top: 5px;
-  padding: 10px;
-}
-</style>

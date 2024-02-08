@@ -17,7 +17,7 @@
               <v-window-item v-for="n in 2" :key="n" :value="n">
                 <v-container fluid>
                   <v-row>
-                    <v-card flat>
+                    <v-card flat outlined color="transparent">
                       <my-skills v-if="n == 1" />
                       <my-hobbies v-if="n == 2" />
                     </v-card>
@@ -43,7 +43,13 @@ const tab = ref(null)
 </script>
 
 <style scoped>
-a {
+a,
+.v-card--variant-elevated,
+.v-card--variant-flat {
+  color: var(--color-text);
+}
+
+.v-list {
   color: var(--color-text);
 }
 </style>
