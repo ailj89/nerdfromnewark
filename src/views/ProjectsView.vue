@@ -64,7 +64,7 @@ import { useProjectsStore } from '@/stores/projects'
 const projectsStore = useProjectsStore()
 const projects = computed(() => projectsStore.projects)
 
-const tab = ref(null)
+const tab = ref(0)
 
 onMounted(projectsStore.FETCH_PROJECTS)
 </script>
