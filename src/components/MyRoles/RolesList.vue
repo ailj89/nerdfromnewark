@@ -1,7 +1,14 @@
 <template>
   <div class="careers">
     <div class="career">
-      <v-card v-for="role in roles" :key="role.company" class="ma-4 pa-6 bg-grey-lighten-2">
+      <v-card
+        v-for="role in roles"
+        :key="role.company"
+        class="ma-4 pa-6"
+        flat
+        outlined
+        color="transparent"
+      >
         <v-list lines="one" class="bg-grey-lighten-2">
           <v-list-item :title="role.company" :subtitle="role.title" class="d-inline-block text-h4">
             <template v-slot:title="{ title }">

@@ -28,7 +28,9 @@ export interface Skill extends Interest {
 export interface Project {
   name: string
   details: string
+  purpose?: string
+  status?: string
+  techstack?: Interest[]
   url?: string
   url2?: string
-  techstack?: Interest[]
 }

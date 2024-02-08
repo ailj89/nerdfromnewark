@@ -428,7 +428,9 @@
   "projects": [
     {
       "name": "Bored? Games!",
-      "details": "Site to manage my board game collection, inspired by <a href=\"https://shorturl.at/clqQT\" target=\"_blank\">Board Game Geek</a>.",
+      "status": "currently in development",
+      "details": "is a site to manage my board game collection, inspired by Board Game Geek's collection page. Features in progress include linking expansions to base games, win/lose records, creating playlist for game nights, guides to setup games and expansions.",
+      "purpose": "While keeping tracks of plays on BGG, I noticed there's no way to indicate whether you've included any expansions or modules during that session. I've also noticed the lack of setup guides for expansions or modules in general and would like a centralized location where I can choose which game I'm playing, how many players, which expansions or modules I am including, if any, and how to set up the game based on those parameters. Furthermore, BGG doesn't not provide a way to sort or filter games by difficulty, player count, themes, or mechanics.",
       "url": "https://boredga.me/",
       "techstack": [
         {
@@ -440,27 +442,31 @@
           "icon": "language-css3"
         },
         {
+          "name": "Tailwind",
+          "icon": "tailwind"
+        },
+        {
           "name": "JavaScript",
           "icon": "language-javascript"
+        },
+        {
+          "name": "Typescript",
+          "icon": "language-typescript"
         },
         {
           "name": "Node.js",
           "icon": "nodejs"
         },
         {
-          "name": "Axios",
-          "icon": "api"
-        },
-        {
           "name": "Vue",
           "icon": "vuejs"
         },
         {
-          "name": "Vuetify",
-          "icon": "vuetify"
+          "name": "Nuxt",
+          "icon": "nuxt"
         },
         {
-          "name": "Nuxt",
+          "name": "Nuxt UI",
           "icon": "nuxt"
         },
         {
@@ -468,12 +474,16 @@
           "icon": "fruit-pineapple"
         },
         {
-          "name": "Typescript",
-          "icon": "language-typescript"
+          "name": "Vitest",
+          "icon": "ab-testing"
         },
         {
           "name": "Vue Test Utils",
           "icon": "ab-testing"
+        },
+        {
+          "name": "Axios",
+          "icon": "api"
         },
         {
           "name": "Prisma",
@@ -481,19 +491,15 @@
         },
         {
           "name": "Supabase",
-          "icon": ""
-        },
-        {
-          "name": "Netlify",
-          "icon": "server-outline"
+          "icon": "database"
         },
         {
           "name": "Docker",
           "icon": "docker"
         },
         {
-          "name": "Vitest",
-          "icon": "ab-testing"
+          "name": "Netlify",
+          "icon": "server-outline"
         }
       ]
     }

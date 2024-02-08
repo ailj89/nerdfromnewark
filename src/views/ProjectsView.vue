@@ -6,7 +6,7 @@
         <v-col cols="1"> </v-col>
 
         <v-col cols="10">
-          <v-card class="bg-grey-lighten-2">
+          <div class="custom-list">
             <v-tabs v-model="tab" color="deep-purple-accent-4">
               <v-tab v-for="(project, index) in projects" :key="project.name" :value="index">
                 {{ project.name }}
@@ -21,34 +21,40 @@
               >
                 <v-container fluid>
                   <v-row>
-                    <v-card-item>
-                      <v-card-title>
-                        <a :href="project.url" target="_blank">
-                          {{ project.name }}
-                        </a>
-                      </v-card-title>
+                    <v-card flat outlined color="transparent">
+                      <v-card-item>
+                        <h6 class="my-4 text-h6">About:</h6>
 
-                      <v-card-text class="text-body-1 mt-4">
-                        {{ project.details }}
-                      </v-card-text>
+                        <v-card-text class="text-body-1 mt-4">
+                          <a :href="project.url" target="_blank" class="navLink">
+                            {{ project.name }} </a
+                          >, {{ project.status }}, {{ project.details }}
+                        </v-card-text>
 
-                      <v-list lines="two" class="bg-grey-lighten-2">
-                        <p class="text-body-2 font-italic">Tech Stack</p>
-                        <v-list-item
-                          v-for="stack in project.techstack"
-                          :key="stack.name"
-                          :title="stack.name"
-                          :prepend-icon="'mdi-' + stack.icon"
-                          class="text-body-2"
-                        >
-                        </v-list-item>
-                      </v-list>
-                    </v-card-item>
+                        <h6 class="my-4 text-h6">Purpose/Problem attempting to solve:</h6>
+
+                        <v-card-text class="text-body-1">
+                          {{ project.purpose }}
+                        </v-card-text>
+
+                        <div>
+                          <p class="text-body-2 font-italic">Tech Stack</p>
+                          <v-list-item
+                            v-for="stack in project.techstack"
+                            :key="stack.name"
+                            :title="stack.name"
+                            :prepend-icon="'mdi-' + stack.icon"
+                            class="text-body-2"
+                          >
+                          </v-list-item>
+                        </div>
+                      </v-card-item>
+                    </v-card>
                   </v-row>
                 </v-container>
               </v-window-item>
             </v-window>
-          </v-card>
+          </div>
         </v-col>
 
         <v-col cols="1"> </v-col>
