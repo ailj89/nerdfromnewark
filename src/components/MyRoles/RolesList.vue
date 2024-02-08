@@ -9,8 +9,8 @@
         outlined
         color="transparent"
       >
-        <v-list lines="one" class="bg-grey-lighten-2">
-          <v-list-item :title="role.company" :subtitle="role.title" class="d-inline-block text-h4">
+        <div class="custom-list">
+          <v-list-item :title="role.company" :subtitle="role.title" class="d-block text-h4">
             <template v-slot:title="{ title }">
               <a :href="role.url" target="_blank" class="text-body-1 d-inline-block">
                 <v-tooltip :text="role.company">
@@ -35,31 +35,32 @@
               </span>
             </template>
 
-            <h6 class="text-h6 my-3">Responsibilites</h6>
+            <h5 class="text-h5 my-3">Responsibilites</h5>
 
             <v-list-item
               v-for="(duty, index) in role.duties"
               :key="index"
               :title="duty"
+              class="text-h4"
             ></v-list-item>
 
-            <h6 v-if="role?.projects" class="text-h6 my-3">Projects</h6>
+            <h5 v-if="role?.projects" class="text-h5 my-3">Projects</h5>
 
             <v-list-item v-for="(project, index) in role?.projects" :key="index">
               <div v-if="project.url != ''">
-                <a :href="project.url" target="_blank" class="text-h5">
+                <a :href="project.url" target="_blank" class="text-h5 navLink">
                   {{ project.name }}
                 </a>
                 <p class="text-body-1">{{ project.details }}</p>
               </div>
               <div v-if="project.url == ''">
-                <p class="text-h5">{{ project.name }}</p>
+                <h6 class="text-h6">{{ project.name }}</h6>
 
                 <p class="text-body-1">{{ project.details }}</p>
               </div>
             </v-list-item>
           </v-list-item>
-        </v-list>
+        </div>
       </v-card>
     </div>
   </div>

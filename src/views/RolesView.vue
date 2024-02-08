@@ -4,15 +4,19 @@
       Interested in my career? Here are the details you seek!
     </h3>
 
+    <p class="text-center">
+      <a href="https://www.linkedin.com/in/andre-l-jordan" target="_blank" class="navLink"
+        >LinkedIn</a
+      >
+      |
+      <a href="../assets/Andre_Jordan_Resume.pdf" target="_blank" class="navLink" download
+        >Resume</a
+      >
+    </p>
+
     <v-container class="roles-container">
       <v-row>
-        <v-col cols="1">
-          <p>
-            <a href="https://www.linkedin.com/in/andre-l-jordan" target="_blank">LinkedIn</a> |
-            <a href="../assets/Andre_Jordan_Resume.pdf" target="_blank" download>Resume</a>
-          </p>
-          <!-- <roles-filter /> -->
-        </v-col>
+        <v-col cols="1"></v-col>
 
         <v-col cols="10">
           <roles-list />

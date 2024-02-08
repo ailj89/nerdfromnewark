@@ -70,10 +70,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-a {
-  text-decoration: none;
-}
-
 .link,
 .navLink {
   color: #6200ea;
@@ -95,3 +91,15 @@ a {
   margin-top: 5px;
   padding: 10px;
 }
+
+header,
+footer,
+.animated_card {
+  a {
+    text-decoration: none;
+  }
+}
+
+/* .animated_card a .v-card .v-title {
+  color: var(--color-text);
+} */
