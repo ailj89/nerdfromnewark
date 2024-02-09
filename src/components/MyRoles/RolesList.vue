@@ -42,24 +42,23 @@
 
             <h5 class="text-h5 my-3">Responsibilites:</h5>
 
-            <v-list-item
-              v-for="(duty, index) in role.duties"
-              :key="index"
-              :title="duty"
-              class="text-h4"
-            ></v-list-item>
+            <v-list-item v-for="(duty, index) in role.duties" :key="index" class="mb-1">
+              <p class="text-body-1">
+                {{ duty }}
+              </p>
+            </v-list-item>
 
             <h5 v-if="role?.projects" class="text-h5 my-3">Projects:</h5>
 
-            <v-list-item v-for="(project, index) in role?.projects" :key="index">
+            <v-list-item v-for="(project, index) in role?.projects" :key="index" class="mb-2">
               <div v-if="project.url != ''">
-                <a :href="project.url" target="_blank" class="text-h5 navLink">
+                <a :href="project.url" target="_blank" class="text-h6 navLink mb-1">
                   {{ project.name }}
                 </a>
                 <p class="text-body-1">{{ project.details }}</p>
               </div>
               <div v-if="project.url == ''">
-                <h6 class="text-h6">{{ project.name }}</h6>
+                <h6 class="text-h6 mb-1">{{ project.name }}</h6>
 
                 <p class="text-body-1">{{ project.details }}</p>
               </div>
