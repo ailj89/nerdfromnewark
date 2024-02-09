@@ -12,9 +12,9 @@
         <div class="custom-list pt-5">
           <v-list-item :title="role.company" :subtitle="role.title" class="d-block text-h4">
             <template v-slot:title="{ title }">
-              <a :href="role.url" target="_blank" class="text-body-1 d-inline-block">
-                <v-tooltip :text="role.company">
-                  <template v-slot:activator="{ props }">
+              <v-tooltip :text="role.company">
+                <template v-slot:activator="{ props }">
+                  <a :href="role.url" target="_blank" class="navLink">
                     <v-img
                       :width="100"
                       aspect-ratio="16/9"
@@ -24,9 +24,15 @@
                       class="d-inline-block"
                       v-bind="props"
                     ></v-img>
-                  </template>
-                </v-tooltip>
-              </a>
+                  </a>
+                </template>
+              </v-tooltip>
+
+              <h4 class="text-h6">
+                <a :href="role.url" target="_blank" class="navLink">
+                  {{ role.company }}
+                </a>
+              </h4>
             </template>
 
             <template v-slot:subtitle="{ subtitle }">
