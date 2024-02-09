@@ -9,7 +9,7 @@
         outlined
         color="transparent"
       >
-        <div class="custom-list">
+        <div class="custom-list pt-5">
           <v-list-item :title="role.company" :subtitle="role.title" class="d-block text-h4">
             <template v-slot:title="{ title }">
               <a :href="role.url" target="_blank" class="text-body-1 d-inline-block">
@@ -30,9 +30,8 @@
             </template>
 
             <template v-slot:subtitle="{ subtitle }">
-              <span class="text-subtitle-1">
-                {{ role.title }}
-              </span>
+              <p class="text-subtitle-1">{{ role.title }}</p>
+              <p class="text-subtitle-1">{{ role.date }}</p>
             </template>
 
             <h5 class="text-h5 my-3">Responsibilites</h5>

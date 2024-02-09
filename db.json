@@ -419,10 +419,6 @@
     {
       "name": "React",
       "icon": "react"
-    },
-    {
-      "name": "Redux",
-      "icon": "state-machine"
     }
   ],
   "projects": [
