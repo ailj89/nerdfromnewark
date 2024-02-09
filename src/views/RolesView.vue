@@ -16,12 +16,9 @@
 
     <v-container class="roles-container">
       <v-row>
-        <!-- <v-col cols="1"></v-col> -->
-
         <v-col cols="10" sm="12" offset="1" offset-sm="0">
           <roles-list />
         </v-col>
-        <!-- <v-col cols="1"></v-col> -->
       </v-row>
     </v-container>
   </div>

@@ -1,8 +1,7 @@
 <template>
   <v-container>
     <v-row>
-      <v-col cols="1"></v-col>
-      <v-col cols="10">
+      <v-col cols="10" sm="12" offset="1" offset-sm="0">
         <v-container>
           <v-row>
             <v-col cols="12" sm="12" md="6">
@@ -47,7 +46,6 @@
           </v-row>
         </v-container>
       </v-col>
-      <v-col cols="1"></v-col>
     </v-row>
   </v-container>
 </template>

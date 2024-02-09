@@ -40,7 +40,7 @@
               <p class="text-subtitle-1">{{ role.date }}</p>
             </template>
 
-            <h5 class="text-h5 my-3">Responsibilites</h5>
+            <h5 class="text-h5 my-3">Responsibilites:</h5>
 
             <v-list-item
               v-for="(duty, index) in role.duties"
@@ -49,7 +49,7 @@
               class="text-h4"
             ></v-list-item>
 
-            <h5 v-if="role?.projects" class="text-h5 my-3">Projects</h5>
+            <h5 v-if="role?.projects" class="text-h5 my-3">Projects:</h5>
 
             <v-list-item v-for="(project, index) in role?.projects" :key="index">
               <div v-if="project.url != ''">
