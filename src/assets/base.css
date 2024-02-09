@@ -100,6 +100,6 @@ footer,
   }
 }
 
-/* .animated_card a .v-card .v-title {
-  color: var(--color-text);
-} */
+.v-tabs {
+  border-bottom: 1px solid var(--vt-c-forget-me-not);
+}

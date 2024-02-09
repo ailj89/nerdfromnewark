@@ -498,6 +498,27 @@
           "icon": "server-outline"
         }
       ]
+    },
+    {
+      "name": "Profanity Filter",
+      "status": "",
+      "details": "prevents users from entering restricted words based on a given list.",
+      "purpose": "Used for the e-card generator built for Miracles From Heaven.",
+      "url": "https://codepen.io/ailj89/pen/eZNGRY",
+      "techstack": [
+        {
+          "name": "HTML",
+          "icon": "language-html5"
+        },
+        {
+          "name": "JavaScript",
+          "icon": "language-javascript"
+        },
+        {
+          "name": "jQuery",
+          "icon": "jquery"
+        }
+      ]
     }
   ]
 }

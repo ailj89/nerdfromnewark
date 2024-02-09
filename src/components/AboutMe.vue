@@ -5,30 +5,30 @@
 
       <v-container>
         <v-row>
-          <v-col cols="1"> </v-col>
+          <!-- <v-col cols="1"> </v-col> -->
 
-          <v-col cols="10">
-            <v-tabs v-model="tab" color="deep-purple-accent-4" align-tabs="start">
-              <v-tab :value="1">Skills</v-tab>
-              <v-tab :value="2">Hobbies</v-tab>
-            </v-tabs>
+          <v-col cols="10" sm="12" offset="1" offset-sm="0">
+            <div class="custom-list">
+              <v-tabs v-model="tab" color="deep-purple-accent-4" align-tabs="start">
+                <v-tab :value="1">Skills</v-tab>
+                <v-tab :value="2">Hobbies</v-tab>
+              </v-tabs>
 
-            <v-window v-model="tab">
-              <v-window-item v-for="n in 2" :key="n" :value="n">
-                <v-container fluid>
-                  <v-row>
-                    <v-card flat outlined color="transparent">
-                      <div class="custom-list">
+              <v-window v-model="tab">
+                <v-window-item v-for="n in 2" :key="n" :value="n">
+                  <v-container fluid>
+                    <v-row>
+                      <v-card flat outlined color="transparent">
                         <my-skills v-if="n == 1" />
                         <my-hobbies v-if="n == 2" />
-                      </div>
-                    </v-card>
-                  </v-row>
-                </v-container>
-              </v-window-item>
-            </v-window>
+                      </v-card>
+                    </v-row>
+                  </v-container>
+                </v-window-item>
+              </v-window>
+            </div>
           </v-col>
-          <v-col cols="1"> </v-col>
+          <!-- <v-col cols="1"> </v-col> -->
         </v-row>
       </v-container>
     </div>

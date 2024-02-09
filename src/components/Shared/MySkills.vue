@@ -30,7 +30,7 @@
     <router-link class="navLink" :to="'/roles'">Career</router-link> page for more information.
 
     <v-row>
-      <v-col cols="6">
+      <v-col cols="12" sm="6">
         <h6 class="my-4 text-h6">Skills I've learned over the years include:</h6>
 
         <v-list-item
@@ -43,7 +43,7 @@
         ></v-list-item>
       </v-col>
 
-      <v-col cols="6">
+      <v-col cols="12" sm="6">
         <h6 class="my-4 text-h6">
           Skills/technologies I am currently learning/interested in include:
         </h6>

@@ -5,7 +5,7 @@
       <v-col cols="10">
         <v-container>
           <v-row>
-            <v-col cols="6">
+            <v-col cols="12" sm="12" md="6">
               <h3 class="text-h3 font-weight-bold pa-4">Welcome To Nerd From Newark!</h3>
               <p class="text-body-1 pa-4">
                 Here you will find details highlighting my
@@ -40,7 +40,7 @@
               </p>
             </v-col>
 
-            <v-col cols="6">
+            <v-col cols="12" sm="12" md="6">
               <about-portfolio />
             </v-col>
             <the-cards />

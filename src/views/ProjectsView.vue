@@ -5,7 +5,7 @@
       <v-row>
         <v-col cols="1"> </v-col>
 
-        <v-col cols="10">
+        <v-col cols="12" sm="10">
           <div class="custom-list">
             <v-tabs v-model="tab" color="deep-purple-accent-4">
               <v-tab v-for="(project, index) in projects" :key="project.name" :value="index">
@@ -28,7 +28,8 @@
                         <v-card-text class="text-body-1 mt-4">
                           <a :href="project.url" target="_blank" class="navLink">
                             {{ project.name }} </a
-                          >, {{ project.status }}, {{ project.details }}
+                          >, <span v-if="project.status"> {{ project.status }},</span>
+                          {{ project.details }}
                         </v-card-text>
 
                         <h6 class="my-4 text-h6">Purpose/Problem attempting to solve:</h6>
