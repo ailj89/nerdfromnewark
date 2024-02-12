@@ -16,9 +16,10 @@
               </p>
 
               <p class="text-body-1 pa-4">
-                If you've visited my portfolio previously, you're probably wondering why the change?
-                I updated my portfolio using Vue to reflect the path my career has taken since
-                previously developing my portfolio using
+                If you've visited my
+                <a href="https://nfn.netlify.app/" class="link" target="_blank">Portfolio</a>
+                previously, you're probably wondering why the change? I migrated my portfolio using
+                Vue to reflect the path my career has taken since I last updated my portfolio using
                 <a class="link" href="https://react.dev/" target="_blank">React</a>. Why
                 <a class="link" href="https://vuejs.org/" target="_blank">Vue?</a> The simple anwser
                 is that it is syntactically similar to
