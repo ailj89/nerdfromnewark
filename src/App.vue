@@ -3,10 +3,8 @@
     <main-nav />
     <v-main>
       <router-view />
+      <the-footer />
     </v-main>
-  </v-layout>
-  <v-layout>
-    <the-footer />
   </v-layout>
 </template>
 

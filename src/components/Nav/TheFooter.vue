@@ -1,5 +1,5 @@
 <template>
-  <v-footer color="black" absolute inset>
+  <v-footer color="black" app="true" inset>
     <v-container>
       <v-row justify="center" no-gutters>
         <v-btn
