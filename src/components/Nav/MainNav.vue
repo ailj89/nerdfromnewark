@@ -10,12 +10,14 @@
 
     <nav class="mx-2">
       <ul class="text-subtitle-1">
+        <!-- <v-responsive width="80%"> -->
         <li v-for="item in navItems" :key="item.name" class="d-inline-block mx-4">
           <router-link :to="item.url" class="navLink">
             <v-icon>mdi-{{ item.icon }}</v-icon>
             {{ item.name }}
           </router-link>
         </li>
+        <!-- </v-responsive> -->
       </ul>
     </nav>
   </v-app-bar>
@@ -63,5 +65,12 @@ header.bg-black {
 
 .v-toolbar-title .v-toolbar-title__placeholder {
   font-weight: bold !important;
+}
+
+@media screen and (min-width: 415px) and (max-width: 539px) {
+  ul {
+    width: 72%;
+    text-align: center;
+  }
 }
 </style>

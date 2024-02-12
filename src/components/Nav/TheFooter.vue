@@ -13,7 +13,20 @@
             {{ item.name }}
           </router-link>
         </v-btn>
-        <v-col class="text-center mt-4" cols="12">
+
+        <v-col class="text-center my-4" cols="12">
+          <p>
+            <a href="https://www.linkedin.com/in/andre-l-jordan" target="_blank" class="navLink"
+              >LinkedIn</a
+            >
+            |
+            <a href="../assets/Andre_Jordan_Resume.pdf" target="_blank" class="navLink" download
+              >Resume</a
+            >
+          </p>
+        </v-col>
+
+        <v-col class="text-center" cols="12">
           <strong>{{ new Date().getFullYear() }} — NFN</strong>
         </v-col>
       </v-row>
@@ -51,6 +64,17 @@ strong {
   color: var(--vt-c-forget-me-not);
 }
 
+@media screen and (min-width: 395px) and (max-width: 498px) {
+  .v-container {
+    width: 72%;
+  }
+}
+
+@media screen and (min-width: 373px) and (max-width: 395px) {
+  .v-container {
+    width: 80%;
+  }
+}
 /* footer {
   position: absolute;
   bottom: 0;
