@@ -10,14 +10,12 @@
 
     <nav class="mx-2">
       <ul class="text-subtitle-1">
-        <!-- <v-responsive width="80%"> -->
         <li v-for="item in navItems" :key="item.name" class="d-inline-block mx-4">
           <router-link :to="item.url" class="navLink">
             <v-icon>mdi-{{ item.icon }}</v-icon>
             {{ item.name }}
           </router-link>
         </li>
-        <!-- </v-responsive> -->
       </ul>
     </nav>
   </v-app-bar>

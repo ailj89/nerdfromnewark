@@ -1,5 +1,5 @@
 <template>
-  <v-footer color="black" app="true" inset>
+  <v-footer color="black" app="true">
     <v-container>
       <v-row justify="center" no-gutters>
         <v-btn
@@ -64,6 +64,10 @@ strong {
   color: var(--vt-c-forget-me-not);
 }
 
+footer {
+  border-top: 2px solid var(--color-text);
+}
+
 @media screen and (min-width: 395px) and (max-width: 498px) {
   .v-container {
     width: 72%;
@@ -75,9 +79,4 @@ strong {
     width: 80%;
   }
 }
-/* footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-} */
 </style>
