@@ -10,7 +10,7 @@
       <a
         class="navLink"
         href="../assets/Andre_Jordan_Resume.pdf"
-        target="_self"
+        target="_blank"
         download="Andre Jordan Resume"
         >Resume</a
       ></v-card-subtitle

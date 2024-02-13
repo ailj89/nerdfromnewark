@@ -11,7 +11,7 @@
       |
       <a
         href="../assets/Andre_Jordan_Resume.pdf"
-        target="_self"
+        target="_blank"
         class="navLink"
         download="Andre Jordan Resume"
         >Resume</a
