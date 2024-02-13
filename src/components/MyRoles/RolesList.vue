@@ -19,7 +19,7 @@
                       :width="100"
                       aspect-ratio="16/9"
                       cover
-                      :src="`../../../public/images/${role.logo}`"
+                      :src="`../../../images/${role.logo}`"
                       :alt="role.company"
                       class="d-inline-block"
                       v-bind="props"

@@ -13,7 +13,7 @@
               theme="dark"
             >
               <v-img
-                src="../../public/images/profile.jpg"
+                src="../../images/profile.jpg"
                 class="align-end"
                 gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
                 height="200px"
@@ -36,7 +36,7 @@
               theme="dark"
             >
               <v-img
-                src="../../public/images/shelf.jpg"
+                src="../../images/shelf.jpg"
                 class="align-end"
                 gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
                 height="200px"
@@ -60,7 +60,7 @@
               theme="dark"
             >
               <v-img
-                src="../../public/images/projects.jpg"
+                src="../../images/projects.jpg"
                 class="align-end"
                 gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
                 height="200px"
