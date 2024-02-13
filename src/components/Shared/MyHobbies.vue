@@ -22,14 +22,66 @@
 </template>
 
 <script lang="ts" setup>
-import { computed, onMounted } from 'vue'
-import { useHobbiesStore } from '@/stores/hobbies'
+// import { computed, onMounted } from 'vue'
+// import { useHobbiesStore } from '@/stores/hobbies'
 
-const hobbiesStore = useHobbiesStore()
+// const hobbiesStore = useHobbiesStore()
 
-const hobbies = computed(() => hobbiesStore.hobbies)
+// const hobbies = computed(() => hobbiesStore.hobbies)
 
-onMounted(hobbiesStore.FETCH_HOBBIES)
+const hobbies = [
+  {
+    activity: 'Cooking',
+    name: '& Baking',
+    favorites: 'Bread, Mac n Cheese, Peach Cobler, Pork Belly, Ramen',
+    icon: 'chef-hat'
+  },
+  {
+    activity: 'Playing',
+    name: 'Board Games',
+    favorites: 'Codenames, Ex Libris, Nemesis, Street Fighter',
+    icon: 'dice-6-outline'
+  },
+  {
+    activity: 'Playing',
+    name: 'Video Games',
+    favorites: 'Diablo, Final Fantasy, Mortal Kombat, Street Fighter',
+    icon: 'controller'
+  },
+  {
+    activity: 'Reading',
+    name: 'Comics',
+    favorites: 'Ice Cream Man, Hulk, She-Hulk, Street Fighter, The Walking Dead, X-Men',
+    icon: 'book-open-page-variant'
+  },
+  {
+    activity: 'Watching',
+    name: 'Anime',
+    favorites: 'Cowboy Bebop, Dragon Ball Z, Gundam, Outlaw Star, Trigun',
+    icon: 'television-classic'
+  },
+  {
+    activity: 'Watching',
+    name: 'Comedies',
+    favorites: 'Boondocks, Dave Chappelle, Family Guy, The Harley Quinn Show, South Park, Ted',
+    icon: 'drama-masks'
+  },
+  {
+    activity: 'Watching',
+    name: 'Horror',
+    favorites:
+      "Child's Play, Evil Dead, Friday the 13th, Halloween, Night of the Living Dead, Nightmare on Elm Street, Return of the Living Dead",
+    icon: 'knife'
+  },
+  {
+    activity: 'Watching',
+    name: 'Sports',
+    favorites: 'Baseball, Basketball, Football, WWE, AEW',
+    icon: 'basketball'
+  }
+]
+
+// onMounted(hobbiesStore.FETCH_HOBBIES)
 </script>
 
 <style scoped>

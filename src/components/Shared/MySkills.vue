@@ -73,23 +73,132 @@
 </template>
 
 <script lang="ts" setup>
-import { onMounted, computed } from 'vue'
-import { useLearningsStore } from '@/stores/learnings'
-import { useSkillsStore } from '@/stores/skills'
-import { useInterestsStore } from '@/stores/interests'
+// import { onMounted, computed } from 'vue'
+// import { useLearningsStore } from '@/stores/learnings'
+// import { useSkillsStore } from '@/stores/skills'
+// import { useInterestsStore } from '@/stores/interests'
 
-const interestsStore = useInterestsStore()
-const interests = computed(() => interestsStore.interests)
+// const interestsStore = useInterestsStore()
+// const interests = computed(() => interestsStore.interests)
 
-const learningsStore = useLearningsStore()
-const learnings = computed(() => learningsStore.learnings)
+const interests = [
+  {
+    name: 'Angular',
+    icon: 'angularjs'
+  },
+  {
+    name: 'React',
+    icon: 'react'
+  }
+]
 
-const skillsStore = useSkillsStore()
-const skills = computed(() => skillsStore.skills)
+// const learningsStore = useLearningsStore()
+// const learnings = computed(() => learningsStore.learnings)
 
-onMounted(interestsStore.FETCH_INTERESTS)
-onMounted(learningsStore.FETCH_LEARNINGS)
-onMounted(skillsStore.FETCH_SKILLS)
+const learnings = [
+  {
+    name: 'Nuxt',
+    icon: 'nuxt'
+  },
+  {
+    name: 'Pinia',
+    icon: 'fruit-pineapple'
+  },
+  {
+    name: 'Tailwind',
+    icon: 'tailwind'
+  },
+  {
+    name: 'Typescript',
+    icon: 'language-typescript'
+  },
+  {
+    name: 'Vite',
+    icon: 'lightning-bolt'
+  },
+  {
+    name: 'Vitest',
+    icon: 'ab-testing'
+  },
+  {
+    name: 'Vue Test Utils',
+    icon: 'ab-testing'
+  },
+  {
+    name: 'Vue Testing Library',
+    icon: 'ab-testing'
+  }
+]
+
+// const skillsStore = useSkillsStore()
+// const skills = computed(() => skillsStore.skills)
+
+const skills = [
+  {
+    name: 'HTML',
+    years: 15,
+    icon: 'language-html5'
+  },
+  {
+    name: 'CSS',
+    years: 15,
+    icon: 'language-css3'
+  },
+  {
+    name: 'JavaScript',
+    years: 15,
+    icon: 'language-javascript'
+  },
+  {
+    name: 'jQuery',
+    years: 11,
+    icon: 'jquery'
+  },
+  {
+    name: 'Restful APIs',
+    years: 11,
+    icon: 'api'
+  },
+  {
+    name: 'Responsive Web Design',
+    years: 11,
+    icon: 'responsive'
+  },
+  {
+    name: 'AngularJS',
+    years: 9,
+    icon: 'angularjs'
+  },
+  {
+    name: 'Bootstrap',
+    years: 9,
+    icon: 'bootstrap'
+  },
+  {
+    name: 'Node.js',
+    years: 9,
+    icon: 'nodejs'
+  },
+  {
+    name: 'Axios',
+    years: 2,
+    icon: 'api'
+  },
+  {
+    name: 'Vue',
+    years: 2,
+    icon: 'vuejs'
+  },
+  {
+    name: 'Vuetify',
+    years: 2,
+    icon: 'vuetify'
+  }
+]
+
+// onMounted(interestsStore.FETCH_INTERESTS)
+// onMounted(learningsStore.FETCH_LEARNINGS)
+// onMounted(skillsStore.FETCH_SKILLS)
 </script>
 
 <style scoped>
