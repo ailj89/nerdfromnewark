@@ -133,7 +133,7 @@ const projects = [
     name: 'NFN',
     status: '',
     details:
-      'he second version of my portfolio, built in React as the first was built with jQuery, detailing my career to that point in time.',
+      'the second version of my portfolio, built in React as the first was built with jQuery, detailing my career to that point in time.',
     purpose:
       'An overdue update to my portfolio while getting a better understanding of how React works.',
     url: 'https://www.nfn.netlify.app',
