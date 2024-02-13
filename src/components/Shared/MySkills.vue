@@ -7,7 +7,11 @@
         >LinkedIn</a
       >
       |
-      <a class="navLink" href="../assets/Andre_Jordan_Resume.pdf" target="_blank" download
+      <a
+        class="navLink"
+        href="../assets/Andre_Jordan_Resume.pdf"
+        target="_self"
+        download="Andre Jordan Resume"
         >Resume</a
       ></v-card-subtitle
     >

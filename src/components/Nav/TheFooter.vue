@@ -20,7 +20,11 @@
               >LinkedIn</a
             >
             |
-            <a href="../assets/Andre_Jordan_Resume.pdf" target="_blank" class="navLink" download
+            <a
+              href="../assets/Andre_Jordan_Resume.pdf"
+              target="_self"
+              class="navLink"
+              download="Andre Jordan Resume"
               >Resume</a
             >
           </p>
