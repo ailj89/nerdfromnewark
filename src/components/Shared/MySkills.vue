@@ -180,6 +180,11 @@ const skills = [
     icon: 'nodejs'
   },
   {
+    name: 'SASS',
+    years: 9,
+    icon: 'sass'
+  },
+  {
     name: 'Axios',
     years: 2,
     icon: 'api'
